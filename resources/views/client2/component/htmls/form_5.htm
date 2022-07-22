@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/mypage_left.css" rel="stylesheet">
+  <link href="css/mypage_header.css" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+
+
+  <style type="text/css">
+    .scrollable {
+      position: relative;
+      /*width:400px;
+      height:400px;*/
+    }
+    .ps__rail-y .ps__thumb-y {
+      background-color: #99CCFF;
+    }
+  </style>
+
+  
+</head>
+<body> 
+  <!-- <div style="margin-top: 60px;"><div> -->
+
+
+
+
+
+
+
+<div id="left_shadow" class="left_shadow"></div>
+<div id="box_left" class="menu_div">
+  
+  <div class="menu_bar">
+    <div class="menu_title">
+      <a href="" class="menu_title_a">Lname</a>
+    </div>
+
+    <ul class="menu_bar_ul">
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="eye icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">マイページ</a>
+          </div>     
+        </div>
+
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">プロフィール編集</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">基本情報</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">自己紹介</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経歴・作新</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験企業</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験スキル</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望条件</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望スキル等</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">こだわり条件</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+            <div class="check icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">スカウト一覧</a>
+          </div>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="chat icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">メッセージ一覧</a>
+          </div>
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">受信トレイ</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">送信済み</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ作成</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="clock icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">応募状況</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">応募履歴一覧</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">中断された応募</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="browser icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">設定</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">パスワード設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メルマガ設定</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li menu_last_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="shutdown icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">ログアウト</a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main_div" id="main_div">
+
+  <header class="mypage_header">
+    <div class="mypage_header_div">
+
+      <div id="mypage_menu" class="mypage_menu">
+        <div class="menu icon"></div>
+      </div>
+      <div class="operate_p">
+        <div class="mypage_search">
+          <div class="search_icon_p_div">
+            <div class="search icon"></div>
+            <p class="search_p">案件を探す</p>
+          </div>
+          <div class="user_icon_div" id="user_icon_div">
+            <img class="user_img" src="face_blue.png"/>
+            <p class="user_name_p">佐々木 三日月</p>
+          </div>
+        </div>
+      </div>
+  
+      <div id="user_operate_div" class="user_operate_div">
+        <div class="user_one_operate_div1">
+          <div class="operate_i"><i class="gg-globe-alt"></i></div>
+          <div class="operate_text"><p class="user_operate_p">設定</p></div>
+        </div>
+        <div class="user_one_operate_div2">
+          <div class="operate_i"><i class="gg-list"></i></div>
+          <div class="operate_text"><p class="user_operate_p">よくあるご質問</p></div>
+        </div>
+        <div class="user_one_operate_div3">
+          <div class="operate_i"><i class="gg-info"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ヘルプ</p></div>
+        </div>
+        <div class="user_one_operate_div4">
+          <div class="operate_i"><i class="gg-log-out"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ログアウト</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top_title">
+    <h3 class="title">経験スキル</h3>
+  </div>
+  <!-- マイページではここの部分のみが変更される -->
+
+  
+  
+  <div class="mypage_edit_div">
+
+    <div class="mypage_edit_url_div">
+      <ul class="mypage_edit_url_ul">
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a active">基本情報</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">自己紹介</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経歴・作品</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験企業</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験スキル</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望条件</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望スキル等</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">こだわり条件</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mypage_form_div">
+      <div id="mypage_form_center" class="mypage_form_center">
+        <form method="POST" class="questionnaire_form h-adr" action="" enctype="multipart/form-data">
+
+          <div class="thumbnail_div">
+
+            <div class="user_thumbnail_input_div ">
+
+              <!-- ////////////////////////////ふえる部分 -->
+              <div class="edit_form_div experienced_companies_form_div">
+                <p class="questionnaire_input_p">経験ポジション</p>
+                <div class="edit_checkbox_plural_div">
+
+
+
+                    <!-- div hiddenn -->
+                    <div class="hidden_div">
+                      <div class="">
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num1" value="1" type="hidden" id="">
+                          </div>
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num1" value="3" type="hidden" id="">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="hidden_div">
+                      <div class="">
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num2" value="1" type="hidden" id="">
+                          </div>
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num2" value="2" type="hidden" id="">
+                          </div>
+
+                      </div>
+                    </div>
+
+                    <div class="hidden_div">
+                      <div class="">
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num3" value="1" type="hidden" id="">
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="hidden_div">
+                      <div class="">
+                          <div class="hidden_div_one">
+                              <input class="hidden_check_num4" value="2" type="hidden" id="">
+                          </div>
+                      </div>
+                    </div>
+
+
+                  <div class="edit_checkbox_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p edit_checkbox_plural_p">システムエンジニア・プログラマー
+                    </p>
+
+                    <div class="checkbox_group_div">
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input1" name="zinbutu_user" value="1" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+                      
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input1" name="zinbutu_user" value="2" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input1" name="zinbutu_user" value="3" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+                      
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input1" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="edit_checkbox_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p edit_checkbox_plural_p">コンサル・PM・PMO
+                    </p>
+                    <div class="checkbox_group_div">
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input2" name="zinbutu_user" value="1" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label2"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input2" name="zinbutu_user" value="2" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label2"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="edit_checkbox_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p edit_checkbox_plural_p">インフラ・ネットワークエンジニア
+                    </p>
+                    <div class="checkbox_group_div">
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input3" name="zinbutu_user" value="1" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label3"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input3" name="zinbutu_user" value="2" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label3"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="edit_checkbox_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p edit_checkbox_plural_p">デザイナー・クリエイター
+                    </p>
+                    <div class="checkbox_group_div">
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input4" name="zinbutu_user" value="1" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label4"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label "></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user check_input4" name="zinbutu_user" value="2" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label4"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label "></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="edit_checkbox_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p edit_checkbox_plural_p">ゲームクリエイター
+                    </p>
+                    <div class="checkbox_group_div">
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                      <div class="checkbox_plural_div sukil_check_restriction_none">
+                        <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+                        <div class="zinbutu_user_flex_div">
+                          <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                          <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                          <span class="checkbox_check_span">コミュニケーション力自信有</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- <div class="experienced_companies_form_display dispalu_none_1">
+
+                </div> -->
+              </div>
+              <!-- /////////////////////////////////////////////////////// -->
+
+              
+            </div>
+          </div>
+
+          <!-- test -->
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">人物タイプ（3個まで）</p>
+            
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+            
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+            
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+            
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">コミュニケーション力自信有</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="edit_form_div">
+            <div class="margin_side_5px_div">
+                <div class="edit_form2_div_flex">
+                    <p class="questionnaire_input_p">特筆事項</p>
+                    <!-- class -->
+                    <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+                </div>
+
+                <div class="edit_form2_div_input">
+                    <!-- name -->
+                    <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="tokuhitu_textarea">hhhhhhhhhhh</textarea>
+                </div>
+                
+            </div>
+        </div>
+
+
+          <div class="submit_div" >
+            <input class="input_submit" type="submit" value="変更する">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<script language="javascript" type="text/javascript"> 
+
+  //jsUH76Tgf
+  
+
+</script> 
+
+
+</body>
+</html>
+
+<script type="text/javascript" src="js/my_page.js"></script>
+<script type="text/javascript" src="js/test.js"></script>
+<script src="js/perfect-scrollbar.js"></script>
+<script>
+  var ps = new PerfectScrollbar('.menu_div');
+</script>

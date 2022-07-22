@@ -1,0 +1,125 @@
+.administrator_account_div {
+  margin: 0 40px;
+  width: calc(100% - 80px);
+}
+body {
+  background: rgb(248, 252, 255);
+}
+.administrator_account_title_div {
+  display: flex;
+}
+.administrator_account_info_div {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0px 3px rgb(0 0 0 / 20%);
+  margin: 10px 0;
+}
+.administrator_account_one_div {
+  font-size: 14px;
+}
+.administrator_id {
+  width: 30%;
+}
+.administrator_name {
+  width: 35%;
+  border-left: none;
+}
+.administrator_phone {
+  border-left: none;
+  width: calc(35% - 31px);
+}
+.administrator_delete {
+    display:none;
+}
+.administrator_account_title_p {
+  background-color: rgb(238, 238, 238);
+  padding: 5px 20px;
+}
+.administrator_account_info_p {
+  padding: 5px 0 5px 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  list-style-position: inside;
+  color: rgb(86, 86, 86);
+}
+.administrator_account_d_sub {
+  border: none;
+  color: #5D99FF;
+  background: #fff;
+  font-size: 14px;
+  padding:0;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+.purasu_icon_admin {
+  display:none;
+  font-size: 18px;
+  padding: 0 6px;
+  line-height: 31px;
+  display:block;
+  cursor: pointer;
+}
+.purasu_icon_admin_title_div {
+  width: 32px;
+  background-color: rgb(238, 238, 238);
+}
+.delete_block_wrap.active {
+  display: block;
+  margin-left: auto;
+}
+
+/* 契約管理選択ボタン */
+.select_submit_contacts {
+  border: none;
+  margin: 0 10px;
+  background-color: rgb(238, 238, 238);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor:pointer;
+}
+
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .administrator_account_div {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+  .administrator_account_title_p {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .administrator_account_info_p {
+    font-size: 12px;
+    padding: 5px 0 5px 10px;
+  }
+  .administrator_id {
+    width: 30%;
+  }
+  .administrator_name {
+    width: 35%;
+  }
+  .administrator_phone {
+    width: calc(35% - 28px);
+  }
+  .purasu_icon_admin {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .select_submit_contacts {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .administrator_account_div {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+  .administrator_account_d_sub {
+    font-size: 12px;
+    margin: 5px;
+  }
+}

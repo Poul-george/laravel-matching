@@ -1,0 +1,181 @@
+* {
+    margin:0;
+    font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Meiryo", "MS PGothic", sans-serif;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background: rgb(248, 252, 255);
+}
+/* メインコンポーネント */
+.main_div {
+    /* user-select: none; */
+    width: 100%;
+    height: 100%;
+    /* margin-left: 0px; */
+    float:right;
+    transition:all 1.5s;
+    background: rgb(248, 252, 255);
+    /* background: rgb(235, 235, 235); */
+}
+.main_div.active {
+    /* margin-left: 250px; */
+    width: calc( 100% - 250px );
+    float:right;
+    transition:all 1.5s;
+}
+.top_title {
+    margin: 40px 30px 0;
+}
+.title {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* マイページcomponent */
+.mypage_div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.user_info_div {
+    border-radius: 3px;
+    /* height: 500px; */
+    width: calc(34% - 20px );
+    background: #fff;
+    margin-left: 20px;
+    margin-right: 15px;
+    border: 1px solid rgb(225, 225, 225);
+}
+.user_info_icon_img {
+    border-radius: 50%;
+    margin: 20px calc( (100% - 100px) / 2 );
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.user_notice_div {
+    width: calc(66% - 35px );
+}
+.notice_section {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid rgb(225, 225, 225);
+}
+.notice_h3 {
+    font-size: 18px;
+    margin:0;
+    padding: 15px;
+    font-weight: 100;
+}
+.notice_notice_div_hr {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid rgb(225, 225, 225);
+}
+.notice_p {
+    margin: 0px 7%;
+    padding: 20px 0 20px;
+    font-size: 14px;
+    color: rgb(86, 86, 86);
+    line-height: 2;
+}
+.user_info_name_p {
+    font-size: 14px;
+    text-align: center;
+    color: rgb(86, 86, 86);
+}
+.user_info_p {
+    font-size: 14px;
+    text-align: left;
+    color: rgb(27, 27, 27);
+    margin-left: 15px;
+}
+.user_profile_how_div {
+    width: 100%;
+    margin: 30px 0;
+}
+.profile_how_width {
+    border-radius: 5px;
+    margin: 10px 15px 0;
+    height: 30px;
+    background: #e4edff;
+}
+.how_wudth {
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    height: 30px;
+    background: #13EEFF;
+}
+.how_width_span {
+    font-size: 14px;
+    margin: 10px;
+    line-height: 30px;
+}
+.profile_sukil_div {
+    margin: 10px 15px;
+}
+.profile_sukil_div {
+    display:flex;
+    flex-wrap:wrap;
+}
+.sukil_a_div {
+    padding: 2px 5px;
+    margin: 5px;
+    background: #5D99FF;
+    border-radius: 3px;
+}
+.sukil_a {
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+    /* メインコンポーネント */
+    .title {
+        font-size: 20px;
+    }
+    .main_div.active {
+        width: 100%;
+    }
+    /* マイページcomponent */
+    .mypage_div {
+        display: block;
+        margin-top: 10px;
+    }
+    .user_info_div {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 3px 2px rgb(200 200 200);
+        border: none;
+    }
+    .user_notice_div {
+        width: calc(100% - 40px);
+        margin: 15px 20px;
+    }
+    .notice_section {
+        box-shadow: 2px 2px 3px 2px rgb(200 200 200);
+        border: none;
+    }
+
+    
+}
+
+
+
+

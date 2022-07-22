@@ -1,0 +1,566 @@
+* {
+    font-family: 'Open Sans';
+    font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+  }
+  .question_form_after{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+  .one_question {
+    padding-top: 3px;
+    padding-right: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgb(190, 190, 190);
+    border: 1px solid #8D7444;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* 1.45 */
+  .logo_img {
+    width: 72.5px;
+    height: 50px;
+  }
+  .logo_img_div {
+    text-align: center;
+  }
+
+
+  /* ///////////////////////// ファイル送信inputデザイン */
+  .attachment {
+    padding-bottom: 5px;
+  }
+  .file_up_div {
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .attachment label {
+    /* ボタン部分の見た目（任意） */
+    display: inline-block;
+    position: relative;
+    background: #17213C;
+    /* color: rgb(113, 113, 113); */
+    color: #8D7444;
+    font-size: 12px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+   }
+   .fileinput {
+    cursor: pointer;
+   }
+   .attachment label:hover {
+    background: #fff;
+    color:#8D7444;
+    /* color:#fff; */
+    transition: all 0.4s;
+   }
+   .attachment label input {
+    /* 今回のポイント */
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+   }
+   .attachment .filename {
+    font-weight: 14px;
+    margin:0 0 0 10px;
+   }
+
+
+  /* ///////////////////////// 基本的なフォームデザイン */
+  .questionnaire_form {
+    border-radius: 5px;
+    margin:  20px auto;
+    /* min-width: 9rem; */
+    padding: calc( 20px + 1%);
+    background: rgb(241, 241, 241);
+  }
+  h3 {
+    font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+    color: #8D7444;
+    position: relative;
+    padding: 10px 1rem;
+    text-align: center
+  }
+
+  h3:after {
+    position: absolute;
+    margin:0 auto;
+    bottom: 0;
+    left: 12.5%;
+    width: 75%;
+    height: 5px;
+    content: '';
+    background-image: -webkit-repeating-linear-gradient(135deg, #8D7444, #8D7444 1px, transparent 2px, transparent 5px);
+    background-image: repeating-linear-gradient(-45deg, #8D7444, #8D7444 1px, transparent 2px, transparent 5px);
+    background-size: 7px 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+
+  /* ///////////////////////// テキストフォームデザイン */
+  input::placeholder {
+    color: #8D7444;
+  }
+  /* IE */
+  input:-ms-input-placeholder {
+    color: #8D7444;
+  }
+  /* Edge */
+  input::-ms-input-placeholder {
+    color: #8D7444;
+  }
+  textarea::placeholder {
+    color: #8D7444;
+  }
+  /* IE */
+  textarea:-ms-input-placeholder {
+    color: #8D7444;
+  }
+  /* Edge */
+  textarea::-ms-input-placeholder {
+    color: #8D7444;
+  }
+  .input_text, .input_textarea {
+    box-shadow: 0 4px 8px rgb(190, 190, 190);
+    display: block;
+    width: calc(100% - 12px);
+    border: none;
+    border: 1px solid #8D7444;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 0 0.5rem 10px;
+    padding-left: -10px;
+    border-radius: 0.3rem;
+    /* background: darken(#f9f9f9, 10%); */
+    /* background: #17213C; */
+    color: #8D7444;
+
+  }
+  textarea {
+    height: 10rem;
+    line-height: 2.5;
+  }
+  .captcha {
+    float:left;
+  }
+  .questionnaire_input_p {
+    margin-left: 10px;
+  }
+  .checkbox_div {
+    margin-left: 10px;
+  }
+  .checkbox_div div {
+    margin-bottom: 10px;
+  }
+  body {
+    padding: 2rem;
+    background: black;
+    color: #8D7444;
+  }
+
+
+
+  .a {
+    width: 100%;
+    height: 100px;
+    background: #8D7444;
+  }
+  .b {
+    width: 100%;
+    height: 100px;
+    background: #17213C;
+  }
+  .c {
+    width: 100%;
+    height: 100px;
+    background: black;
+  }
+
+
+
+  /* ///////////////////////// セレクトボックスデザイン */
+  .cp_ipselect_div {
+    display: flex;
+  }
+  .cp_ipselect {
+      position: relative;
+      width: 30%;
+      margin: 0 auto 20px;
+      text-align: center;
+  }
+  .cp_ipselect_two {
+    width: 45%;
+  }
+  .cp_ipselect .day, .cp_ipselect .mounth {
+      width: 20%;
+  }
+  .cp_sl06 {
+      position: relative;
+      font-family: inherit;
+      background-color: transparent;
+      width: 100%;
+      padding: 10px 10px 10px 0;
+      font-size: 18px;
+      border-radius: 0;
+      border: none;
+      /* border-bottom: 1px solid rgba(0,0,0, 0.3); */
+      border-bottom: 1px solid #8D7444;
+  }
+  .cp_sl06:focus {
+      outline: none;
+      /* border-bottom: 1px solid rgba(0,0,0, 0); */
+      border-bottom: 1px solid #8D7444;
+  }
+  .cp_ipselect .cp_sl06 {
+      appearance: none;
+      -webkit-appearance:none;
+    color: #8D7444;
+  }
+  .cp_ipselect select::-ms-expand {
+      display: none;
+  }
+  .cp_ipselect:after {
+      position: absolute;
+      top: 18px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: '';
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      /* border-top: 6px solid rgba(0, 0, 0, 0.3); */
+      border-top: 6px solid #8D7444;
+      pointer-events: none;
+  }
+  .cp_sl06_selectlabel {
+      /* color: rgba(0,0,0, 0.5); */
+      color: #8D7444;
+      font-size: 18px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 0;
+      top: 10px;
+      transition: 0.2s ease all;
+  }
+  .cp_sl06:focus ~ .cp_sl06_selectlabel, .cp_sl06:valid ~ .cp_sl06_selectlabel {
+      /* color: rgba(0,0,0, 0.5); */
+      color: #8D7444;
+      top: -20px;
+      transition: 0.2s ease all;
+      font-size: 14px;
+  }
+  .cp_sl06_selectbar {
+      position: relative;
+      display: block;
+      width: 100%;
+  }
+  .cp_sl06_selectbar:before, .cp_sl06_selectbar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: rgba(0,0,0, 0.5);
+      transition: 0.2s ease all;
+  }
+  .cp_sl06_selectbar:before {
+      left: 50%;
+  }
+  .cp_sl06_selectbar:after {
+      right: 50%;
+  }
+  .cp_sl06:focus ~ .cp_sl06_selectbar:before, .cp_sl06:focus ~ .cp_sl06_selectbar:after {
+      width: 50%;
+  }
+  .cp_sl06_highlight {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0.5;
+  }
+
+
+  /* ///////////////////////// 送信ボタンデザイン */
+  .input_submit {
+    margin: 0 auto;
+    width: 50%;
+    border: none;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: black;/*ボタン色*/
+    color: #8D7444;/*ボタン色より暗く*/
+    /* box-shadow: 0px 2px 2px #b1b1b1; */
+    border: solid 1px #8D7444;
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(172, 172, 172, 0.5);
+  }
+  .input_submit:hover {
+    background: #ffffff;/*ボタン色*/
+    color: #8D7444;/*ボタン色より暗く*/
+    /* box-shadow: 0px 2px 2px #cacaca; */
+    /* border-bottom: solid 2px rgb(227, 227, 227); */
+    border-radius: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(202, 202, 202, 0.5);
+    transition: 0.5s;
+  }
+  .input_submit:active  {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(101, 101, 101, 0.2);
+    border-bottom: none;
+  }
+
+
+  /* ///////////////////////// ラジオボタンデザイン */
+  .radio_div{
+    margin: -10px 0 20px 10px;
+  }
+  .radio_div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  ul li{
+    /* color: #AAAAAA; */
+    color: #8D7444;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  ul li input[type=radio]{
+    position: absolute;
+    /* visibility: hidden; */
+    opacity: 0;
+  }
+  ul li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    /* font-size: 1.35em; */
+    padding: 3px 25px 0 40px;
+    margin: 10px auto 0;
+    height: 25px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+  }
+
+  ul li:hover label{
+    color: #8D7444;
+    /* color: #787878; */
+  }
+
+  ul li .check{
+    display: block;
+    position: absolute;
+    /* border: 3px solid #AAAAAA; */
+    border: 3px solid #8D7444;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    top: 14px;
+    left: 10px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+  }
+  li {
+    display: inline-block;
+  }
+
+  ul li:hover .check {
+    /* border: 3px solid #787878; */
+    border: 3px solid #fff;
+  }
+
+  ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    top: 3px;
+    left: 3px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+  }
+
+  input[type=radio]:checked ~ .check {
+    /* border: 3px solid #787878; */
+    border: 3px solid #8D7444;
+  }
+
+  input[type=radio]:checked ~ .check::before{
+    /* background: #787878; */
+    background: #8D7444;
+  }
+
+  input[type=radio]:checked ~ label{
+    /* color: #787878; */
+    color: #8D7444;
+  }
+  input[type="submit"][disabled] {
+    background: #fff;
+    }
+
+  @media screen and (min-width: 700px){
+    .question_form_after{
+        width: 60%;
+    }
+    .radio_div ul li{
+      display: inline-block;
+      width: auto;
+    }
+    .logo_img {
+      width: 109px;
+      height: 75px;
+    }
+  }
+
+
+
+  @media screen and (min-width: 700px){
+    .questionnaire_form {
+      width: 80%;
+      margin: 30px auto 10% ;
+      min-width: 9rem;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h3:after {
+      left: 25%;
+      width: 50%;
+    }
+    .input_text, .input_textarea {
+      width: calc(100% - 12px);
+    }
+    .checkbox_div div {
+      display: inline-block;
+      margin-right: 20px
+    }
+  }
+
+
+
+
+
+
+  .checkbox_div {
+    margin: auto;
+    padding: 0 20px 20px;
+    /* background: #484848; */
+  }
+
+  /*Checkboxes styles*/
+  .input_checkbox[type="checkbox"] { display: none; }
+
+  .input_checkbox[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    font: 14px/20px 'Open Sans', Arial, sans-serif;
+    /* color: #7b7b7b; */
+    color: #8D7444;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .input_checkbox[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+  .input_checkbox[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #7b7b7b; */
+    border: 1px solid #8D7444;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+  }
+
+  .input_checkbox[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* ///////////////////////// ファイル送信inputデザイン  sample_png */
+.sample_png {
+    height: 450px;
+    width: 243px;
+    margin: -10px 0 10px 20px;
+  }
+
+  .file_up_div {
+    display: block;
+    padding-bottom: 10px;
+    margin-left: 20px;
+  }
+  .attachment label {
+    /* ボタン部分の見た目（任意） */
+    display: inline-block;
+    position: relative;
+    background: white;
+    color: rgb(78, 78, 78);
+    font-size: 12px;
+    padding: 10px 18px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+   }
+   .fileinput {
+    cursor: pointer;
+   }
+   .attachment label:hover {
+    background: #888;
+    color:#fff;
+    transition: all 0.4s;
+   }
+   .attachment label input {
+    /* 今回のポイント */
+    position: absolute;
+    left:0;
+    top:0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+   }
+   .attachment .filename {
+    font-weight: 14px;
+    margin:0 0 0 10px;
+   }

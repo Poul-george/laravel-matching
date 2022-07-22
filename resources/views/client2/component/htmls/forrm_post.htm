@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/form_client1.css" rel="stylesheet">
+  <link href="css/mypage_left.css" rel="stylesheet">
+  <link href="css/mypage_left2.css" rel="stylesheet">
+  <link href="css/mypage_header.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/message.css" rel="stylesheet">
+  <link href="css/administrator.css" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="js/chartjs-plugin-labels.js"></script>
+
+</head>
+<body> 
+
+
+
+
+<div id="left_shadow" class="left_shadow"></div>
+<div id="box_left" class="menu_div">
+  
+  <div class="menu_bar">
+    <div class="menu_title">
+      <a href="" class="menu_title_a">Lname</a>
+    </div>
+
+    <ul class="menu_bar_ul">
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="eye icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">マイページ</a>
+          </div>     
+        </div>
+
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">プロフィール編集</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">基本情報</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">自己紹介</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経歴・作新</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験企業</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験スキル</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望条件</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望スキル等</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">こだわり条件</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+            <div class="check icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">スカウト一覧</a>
+          </div>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="chat icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">メッセージ一覧</a>
+          </div>
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">受信トレイ</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">送信済み</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ作成</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="clock icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">応募状況</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">応募履歴一覧</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">中断された応募</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="browser icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">設定</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">パスワード設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メルマガ設定</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li menu_last_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="shutdown icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">ログアウト</a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main_div" id="main_div" style="margin:0">
+
+  <header class="mypage_header">
+    <div class="mypage_header_div">
+
+      <div id="mypage_menu" class="mypage_menu">
+        <div class="menu icon"></div>
+      </div>
+      <div class="operate_p">
+        <div class="mypage_search">
+          <div class="search_icon_p_div">
+            <div class="search icon"></div>
+          </div>
+          <div class="message_icon_p_div_user">
+            <p class="message_count_p_user">11</p>
+
+            <div class="message icon"></div>
+          </div>
+          <div class="user_icon_div" id="user_icon_div">
+            <img class="user_img" src="face_blue.png"/>
+            <p class="user_name_p">佐々木 三日月</p>
+          </div>
+        </div>
+      </div>
+  
+      <div id="user_operate_div" class="user_operate_div">
+        <div class="user_one_operate_div1">
+          <div class="operate_i"><i class="gg-globe-alt"></i></div>
+          <div class="operate_text"><p class="user_operate_p">設定</p></div>
+        </div>
+        <div class="user_one_operate_div2">
+          <div class="operate_i"><i class="gg-list"></i></div>
+          <div class="operate_text"><p class="user_operate_p">よくあるご質問</p></div>
+        </div>
+        <div class="user_one_operate_div3">
+          <div class="operate_i"><i class="gg-info"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ヘルプ</p></div>
+        </div>
+        <div class="user_one_operate_div4">
+          <div class="operate_i"><i class="gg-log-out"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ログアウト</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top_title">
+    <h3 class="title">案件作成</h3>
+  </div>
+  <!-- マイページではここの部分のみが変更される -->
+
+  
+  <img class="test_img" src="1439084D-F98B-4CEF-B6CD-AED5271ACA7D_1_201_a.jpeg">
+  <img class="test_img" src="B588F2DE-20B8-4688-B996-0399EACAC6B2_1_105_c.jpeg">
+  
+  <!-- ///////////////////// -->
+  <div class="mypage_form_center">
+
+    <div class="edit_form_div search_from_div">
+      <div class="word_search_div">
+        <input id="" class="input_text max_input_text"  type="text" name="search_word" value="" >
+        <input class="search_word_submit" name="search_word_submit" type="submit" value="検索">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- <div class="apply_div position_low" id="apply_div_fixed">
+    <div class="not_apply_btn_div">
+     <span class="not_apply_span">応募済み</span>
+    </div>
+  </div> -->
+  
+
+
+  <div class="confirmation_input_div">
+    <p class="judge_issue_p">申請判断中</p>
+    <p class="judge_issue_sub_p">申請判断中のものは、掲載されません</p>
+
+    <div class="confirmation_input_group_div not_view">
+
+      <div class="issues_one_div">
+
+        <div class="issue_img_title_flex">
+          <div class="issue_img_div">
+
+          </div>
+          <img class="issue_img" src="face_blue.png">
+          <div class="issue_title_h3_div">
+            <a class="issue_detail_a" href="">
+              <h3 class="issue_title_h3">リモートOK／社会的使命を追い続ける防災Techスタートアップでスマホアプリエンジニア募集</h3>
+            </a>
+          </div>
+        </div>
+
+        <div class="issues_contents_div">
+
+          <div class="issue_contents_flex">
+            <h4 class="issue_contents_h4">単価</h4>
+            <div class="issue_contents_right_div">
+              <h3 class="issue_contents_money"><span class="money_span">1,000,000 ~ 1,250,000</span>円/月</h3>
+            </div>
+          </div>
+
+          <div class="issue_contents_flex">
+            <h4 class="issue_contents_h4">職種</h4>
+            <div class="issue_contents_right_skill">
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">バックエンドエンジニア</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">インフラエンジニア</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">スマホアプリ開発（ネイティブ）</a>
+              </div>
+            </div> 
+          </div>
+
+          <div class="issue_contents_flex">
+            <h4 class="issue_contents_h4">スキル</h4>
+            <div class="issue_contents_right_skill">
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">PHP</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">SQL</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">Java</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">Swift</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">Ruby</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">Python</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">Django</a>
+              </div>
+            </div> 
+          </div>
+
+          <div class="issue_contents_flex">
+            <h4 class="issue_contents_h4">業界</h4>
+            <div class="issue_contents_right_skill">
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">銀行</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">SNS</a>
+              </div>
+              <div class="confirmation_input_a_div issue_contents">
+                <a class="confirmation_input_a">モバイルコンテンツ</a>
+              </div>
+            </div> 
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- /////// -->
+  
+      <!-- ///////////////////// -->
+  
+      <div class="confirmation_input_div">
+        <div class="confirmation_input_group_div">
+          <div class="input_title_h3_div confirmation_input_title_h3_div"><h3 class="input_title_h3">基本情報</h3></div>
+  
+          <div class="confirmation_input_group_one_flex top">
+            <h4 class="confirmation_input_title_h4">単価</h4>
+            <p class="confirmation_input_p money_p">800,000 〜 1,000,000 円/月</p>
+          </div>
+  
+          <div class="confirmation_input_group_one_flex">
+            <h4 class="confirmation_input_title_h4">作業内容</h4>
+            <p class="confirmation_input_p">今年を第二創業期を位置づけ、開発組織の改革に着手。モダンな開発環境・開発スタイルで、エンジニアの成長を応援し、プロダクト開発のスピードを加速させます。
+              本求人は仕様検討や技術選定を進めている「新規危機管理情報管理システム」のエンジニアポジションの募集になります。</p>
+          </div>
+  
+          <div class="confirmation_input_group_one_flex">
+            <h4 class="confirmation_input_title_h4">作業内容</h4>
+            <p class="confirmation_input_p">今年を第二創業期を位置づけ、開発組織の改革に着手。モダンな開発環境・開発スタイルで、エンジニアの成長を応援し、プロダクト開発のスピードを加速させます。
+              本求人は仕様検討や技術選定を進めている「新規危機管理情報管理システム」のエンジニアポジションの募集になります。</p>
+          </div>
+  
+          <div class="confirmation_input_group_one_flex bottom">
+            <h4 class="confirmation_input_title_h4">作業内容</h4>
+            <div class="confirmation_input_p bottom display_flex">
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">PHP</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">SQL</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">Java</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+                <div class="confirmation_input_a_div">
+                  <a class="confirmation_input_a">javascript</a>
+                </div>
+              </div>  
+          </div>
+  
+        </div>
+      </div>
+
+      <!-- //応募　編集ボタンa -->
+      <div class="issue_edit_btn_box_div">
+          <a href="" class="issue_edit_btn_a">編集する</a>
+      </div>
+
+  
+      <!-- /////// -->
+  <div class="mypage_edit_div">
+
+
+
+
+    <div class="mypage_form_div">
+      <div id="mypage_form_center" class="mypage_form_center">
+        <form method="POST" class="questionnaire_form h-adr" action="" enctype="multipart/form-data" onsubmit="return cancelsubmit2()">
+          
+
+          <div class="confirmation_btn_div">
+            <div class="submit_div" >
+              <input class="input_submit return_submit" type="submit" value="戻る">
+            </div>
+  
+            <div class="submit_div" >
+              <input class="input_submit" type="submit" value="確認画面へ">
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="apply_div apply_div_bottom" id="apply_div_bottom">
+    <div class="apply_btn_div">
+      <a href="" class="btn btn-flat"><span>応募する</span></a>
+    </div>
+  </div>
+  <div class="apply_div apply_div_bottom" id="apply_div_bottom">
+    <div class="not_apply_btn_div">
+      <span class="not_apply_span">応募済み</span>
+     </div>
+  </div>
+  <div class="apply_div apply_div_bottom" id="apply_div_bottom">
+    <div class="apply_btn_div">
+      <input type="hidden" value="23">
+      <input type="submit" name="apply_btn" value="応募する" class="apply_submit">
+      <!-- <a href="" class="btn btn-flat"><span>応募する</span></a> -->
+    </div>
+  </div>
+
+
+
+  <div class="confirmation_input_div company_info_div">
+
+    <div class="confirmation_input_group_div">
+      <p class="questionnaire_input_p issue_company_name_p">アプリケーション開発 AIエンジニ募集の案件・求人【Life Can Change株式会社】</p>
+
+      <div class="issues_one_div company_one_div">
+
+        <div class="issue_img_title_flex company_img_title_div">
+          <div class="issue_img_div">
+
+            <img class="issue_img" src="face_blue.png">
+          </div>
+          <div class="issue_title_h3_div company_title_h3_div">
+            <p class="questionnaire_input_p">Life Can Change株式会社</p>
+            <a class="issue_detail_a" href="">
+              <h3 class="issue_title_h3">アプリケーション開発 AIエンジニ募集</h3>
+            </a>
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+
+  <div class="confirmation_input_div company_info_div">
+
+    <div class="confirmation_input_group_div">
+      <p class="questionnaire_input_p">PHP上級エンジニア／ECサイト・ソーシャルアプリの開発経験が豊富</p>
+
+      <div class="issues_one_div company_one_div">
+
+        <div class="issue_img_title_flex company_img_title_div">
+          <div class="issue_img_div">
+
+            <img class="issue_img" src="face_blue.png">
+          </div>
+          <div class="issue_title_h3_div" style="width:100%;">
+            <a class="issue_detail_a" href="">
+              <h3 class="issue_title_h3">山田 克典</h3>
+            </a>
+          </div>  
+          <div class="rate"></div>
+          <div id="rate_info_div" class="rate_info_div">
+            <div class="rate_info_div_text">
+              <p class="rate_info_p">このユーザーをお気に入りに設定することで、一覧表示で上位に表示されます。</p>
+            </div>
+          </div>
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+
+
+  <div class="confirmation_input_div" style="margin-top:0">
+    <div class="company_info_detail_div">
+      <div class="input_title_h3_div confirmation_input_title_h3_div"><h3 class="input_title_h3">概要</h3></div>
+
+      <div class="company_info_detail_one_textarea">
+        <h4 class="company_info_detail_title_h4">事業内容</h4>
+        <p class="company_info_detail_text">今年を第二創業期を位置づけ、開発組織の改革に着手。モダンな開発環境・開発スタイルで、エンジニアの成長を応援し、プロダクト開発のスピードを加速させます。
+          本求人は仕様検討や技術選定を進めている「新規危機管理情報管理システム」のエンジニアポジションの募集になります。</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">設立</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">設立</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">設立</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">代表取締役</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">保有案件の特徴</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="confirmation_input_div" >
+    <div class="company_info_detail_div">
+      <div class="input_title_h3_div confirmation_input_title_h3_div"><h3 class="input_title_h3">概要</h3></div>
+
+      <div class="company_info_detail_one_textarea">
+        <h4 class="company_info_detail_title_h4">事業内容</h4>
+        <p class="company_info_detail_text">今年を第二創業期を位置づけ、開発組織の改革に着手。モダンな開発環境・開発スタイルで、エンジニアの成長を応援し、プロダクト開発のスピードを加速させます。
+          本求人は仕様検討や技術選定を進めている「新規危機管理情報管理システム」のエンジニアポジションの募集になります。</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">業界</h4>
+        <div class="canvas_div_flex">
+          <div style="width: 150px;" class="canvas_div">
+            <canvas id="chart1" width="150" height="150"></canvas>
+          </div>
+
+          <div class="canvas_title_div">
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color1"></div>
+              <p class="canvas_title">スマホアプリ</p>
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color2"></div>
+              <p class="canvas_title">IT関連技術公認（オラクルマスター認定技術者）IOCPP</p>
+              
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color3"></div>
+              <p class="canvas_title">テレビ</p>
+              
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color4"></div>
+              <p class="canvas_title">SNS</p>
+              
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color5"></div>
+              <p class="canvas_title">その他</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">業種</h4>
+        <div class="canvas_div_flex">
+          <div style="width: 150px;" class="canvas_div">
+            <canvas id="chart2" width="150" height="150"></canvas>
+          </div>
+
+          <div class="canvas_title_div">
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color1"></div>
+              <p class="canvas_title">スマホアプリ</p>
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color2"></div>
+              <p class="canvas_title">IT関連技術公認</p>
+              
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color3"></div>
+              <p class="canvas_title">テレビ</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">資格</h4>
+        <div class="canvas_div_flex">
+          <div style="width: 150px;" class="canvas_div">
+            <canvas id="chart3" width="150" height="150"></canvas>
+          </div>
+
+          <div class="canvas_title_div">
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color1"></div>
+              <p class="canvas_title">スマホアプリ</p>
+            </div>
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color2"></div>
+              <p class="canvas_title">IT関連技術公認</p>
+              
+            </div>
+
+            <div class="canvas_color_title_flex">
+              <div class="camvas_color color5"></div>
+              <p class="canvas_title">その他</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">設立</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+      <div class="company_info_detail_one_flex">
+        <h4 class="company_info_detail_title_h4">設立</h4>
+        <p class="company_info_detail_p">2020年10月12日</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- //メッセージ一覧 -->
+
+  <!-- 管理者にmessage -->
+
+  <div class="message_box_div" style="height:auto">
+    <a class="message_box_one_a" href="">
+      <div class="message_box_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_message_title_name">
+          <p class="user_message_name">管理者</p>
+          <p class="user_message_title">新着メッセージがあります。</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <p class="user_message_day_hm">4/9</p>
+          <div class="user_message_alret"><span class="user_message_alret_span">3</span></div>
+        </div>      
+        
+      </div>
+    </a>
+  </div>
+
+
+  <div class="message_box_div" style="height:auto">
+    <form method="POST" action="" enctype="multipart/form-data" >
+      <!-- @csrf -->
+      <input class="managers_message_btn" type="submit" name="submit_msg" value="管理者へメッセージ">
+      <input class="" type="hidden" name="shop_number_id" value="{{$one_item->id}}">
+      <input class="" type="hidden" name="shop_id" value="{{$one_item->shop_id}}">
+    </form>
+  </div>
+
+
+  <div class="message_box_div">
+    <a class="message_box_one_a" href="">
+      <div class="message_box_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_message_title_name">
+          <p class="user_message_name">織田 信長</p>
+          <p class="user_message_title">新着メッセージがあります。</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <p class="user_message_day_hm">12/24</p>
+          <div class="user_message_alret"><span class="user_message_alret_span">99</span></div>
+        </div>      
+        
+      </div>
+    </a>
+
+    <a class="message_box_one_a" href="">
+     <div class="message_box_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_message_title_name">
+          <p class="user_message_name">大山崎 修太郎</p>
+          <p class="user_message_title">プロフィールの入力を充実させることでスカウトの受信率が高くなります。まずは、職務経歴書・スキルシートをアップロードし、充実させましょう。また、以前にアップロードしたままの方は、最新の情報を更新し、再アップロードされることをお勧めします。</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <p class="user_message_day_hm">22:28</p>
+          <!-- <div class="user_message_alret"><span class="user_message_alret_span">1</span></div> -->
+        </div>      
+        
+      </div>
+    </a>
+
+    <a class="message_box_one_a" href="">
+      <div class="message_box_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_message_title_name">
+          <p class="user_message_name">織田 信長</p>
+          <p class="user_message_title">新着メッセージがあります。</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <p class="user_message_day_hm">1:35</p>
+          <div class="user_message_alret"><span class="user_message_alret_span">12</span></div>
+        </div>      
+        
+      </div>
+    </a>
+  </div>
+
+  <div class="checkbox_plural_div sukil_check_restriction_none">
+    <input class="zinbutu_user interview_check check_input1" name="user_select[]" value="" type="checkbox" id="interview_check">
+    <div class="zinbutu_user_flex_div">
+        <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1"></div>
+        <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+        <span class="checkbox_check_span"></span>
+    </div>
+  </div>
+
+  <style>
+
+    .checkbox_plural_div {
+        margin: 13px;
+    }
+    @media screen and (max-width: 799px) {
+      .checkbox_plural_div {
+          width: 28px;
+      }
+    }
+  </style>
+  <label>年/月/日：<input type="date"></label>
+ 
+
+
+  <div class="user_select_div">
+      <div class="user_select_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_select_title_name">
+          <p class="user_message_title">PHP上級エンジニア／ECサイト・ソーシャルアプリの開発経験が豊富</p>
+          <p class="user_message_name">織田 信長</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <div class="checkbox_plural_div sukil_check_restriction_none">
+            <input class="zinbutu_user interview_check check_input1" name="user_select[]" value="" type="checkbox" id="interview_check">
+            <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1 user_select_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+            </div>
+          </div>
+        </div>      
+        
+      </div>
+
+
+     <div class="user_select_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_select_title_name">
+          <p class="user_message_title">PHP上級エンジニア／ECサイト・ソーシャルアプリの開発経験が豊富</p>
+          <p class="user_message_name">大山崎 修太郎</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+            <input class="zinbutu_user interview_check check_input1" name="user_select[]" value="" type="checkbox" id="interview_check">
+            <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1 user_select_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+            </div>
+          </div>
+        </div>      
+        
+      </div>
+
+
+      <div class="user_select_one_div">
+
+        <div class="user_img_message">
+        
+          <img class="user_img_msg" src="face_blue.png">
+        </div>
+  
+        <div class="user_select_title_name">
+          <p class="user_message_title">PHP上級エンジニア／ECサイト・ソーシャルアプリの開発経験が豊富</p>
+          <p class="user_message_name">織田 信長</p>
+        </div>
+  
+        <div class="user_message_alret_day_hm">
+          <div class="checkbox_plural_div sukil_check_restriction_none">
+            <input class="zinbutu_user interview_check check_input1" name="user_select[]" value="" type="checkbox" id="interview_check">
+            <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div check_label1 user_select_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+            </div>
+          </div>
+        </div>      
+        
+      </div>
+
+  </div>
+  
+
+  <!-- ////メッセージページ -->
+  <div class="administrator_account_div">
+    <div class="administrator_account_title_div">
+      <div class="administrator_account_one_div administrator_id">
+        <p class="administrator_account_title_p">id_name</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_name">
+        <p class="administrator_account_title_p">name</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_phone">
+        <p class="administrator_account_title_p">phone</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_delete">
+        <p class="administrator_account_title_p">delete</p>
+      </div>
+      <div class="purasu_icon_admin_title_div"></div>
+    </div>
+
+
+    <div class="administrator_account_info_div">
+      <div class="administrator_account_one_div administrator_id">
+        <a href="">
+          <p class="administrator_account_info_p">fin2m5</p>
+        </a>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_name">
+        <p class="administrator_account_info_p">test_admin</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_phone">
+        <p class="administrator_account_info_p">00000000000</p>
+      </div>
+      <div class="purasu_icon_admin">＋</div>
+      <div class="administrator_account_one_div administrator_delete delete_block_wrap">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <input class="administrator_account_d_sub" type="submit" name="submit_d" value="削除">
+        </form>
+      </div>
+    </div>
+
+    <div class="administrator_account_info_div">
+      <div class="administrator_account_one_div administrator_id">
+        <a href="">
+          <p class="administrator_account_info_p">jngr8ganel</p>
+        </a>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_name">
+        <p class="administrator_account_info_p">test_baby</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_phone">
+        <p class="administrator_account_info_p">00000000000</p>
+      </div>
+
+      <div class="purasu_icon_admin">＋</div>
+      <div class="administrator_account_one_div administrator_delete delete_block_wrap">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <input class="administrator_account_d_sub" type="submit" name="submit_d" value="削除">
+        </form>
+      </div>
+    </div>
+
+    <div class="administrator_account_info_div">
+      <div class="administrator_account_one_div administrator_id">
+        <a href="">
+          <p class="administrator_account_info_p">fivjkniuabvfgi;ufgiu2m5</p>
+        </a>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_name">
+        <p class="administrator_account_info_p">test_admin_op</p>
+      </div>
+      
+      <div class="administrator_account_one_div administrator_phone">
+        <p class="administrator_account_info_p">00000000000</p>
+      </div>
+
+      <div class="purasu_icon_admin">＋</div>
+      <div class="administrator_account_one_div administrator_delete delete_block_wrap">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <input class="administrator_account_d_sub" type="submit" name="submit_d" value="削除">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  
+  	
+
+
+
+</div>
+
+<!-- <script type="text/javascript" src="js/my_page.js"></script> -->
+<script type="text/javascript" src="js/main_page.js"></script>
+<script type="text/javascript" src="js/test_2.js"></script>
+<script type="text/javascript" src="js/chart_graph.js"></script>
+<script type="text/javascript" src="js/company_page.js"></script>
+
+
+

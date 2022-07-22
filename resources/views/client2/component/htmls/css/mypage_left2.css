@@ -1,0 +1,46 @@
+.menu_div {
+  background: #CC00FF;
+}
+.menu_div.active {
+  background: #CC00FF;
+}
+.shutdown.icon:before {
+  border-left: solid 3px #CC00FF;
+  border-right: solid 3px #CC00FF;
+}
+.chat.icon:before {
+  background-color: #cc00ff;
+  background-color: #CC00FF;
+}
+
+.card.icon {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 6px;
+  width: 18px;
+  height: 12px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+
+.card.icon:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -1px;
+  width: 19px;
+  height: 1.5px;
+  background-color: currentColor;
+}
+
+.card.icon:after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  bottom: 2px;
+  width: 4px;
+  height: 1px;
+  background-color: currentColor;
+}
+

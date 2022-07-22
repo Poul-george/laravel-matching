@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  margin:0;
+    font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Meiryo", "MS PGothic", sans-serif;
+}
+.pageWrapper {
+  height: 60px;
+  width: 100%;
+  background:#5D99FF;
+  position: fixed;
+  z-index: 8;
+  top:0;
+}
+.site_logo {
+  width: 60px;
+}
+.login_logo {
+  position: fixed;
+  margin: 0px 0 5px 15px;
+}
+.logo_header_h3 {
+  color: #fff;
+  font-size: 30px;
+    margin: 0;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+/*  */
+
+.openbtn4{
+  margin: 50x 10px 0 0;
+  position: fixed;/*ボタン内側の基点となるためrelativeを指定*/
+  right: 0;
+  top:0;
+  /* background:#b2cbe4; */
+  cursor: pointer;
+    width: 60px;
+    height:60px;
+  border-radius: 50%;
+}
+
+/*ボタン内側*/
+.openbtn4 span{
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    position: absolute;
+    left: 14px;
+    height: 2px;
+    border-radius: 5px;
+  background: #fff;
+    width: 54%;
+  }
+
+
+.openbtn4 span:nth-of-type(1) {
+  top:13px; 
+}
+
+.openbtn4 span:nth-of-type(2) {
+  top:21px;
+}
+
+.openbtn4 span:nth-of-type(3) {
+  top:29px;
+}
+
+.openbtn4 span:nth-of-type(3)::after {
+  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top:5px;
+  left:-2px;
+  color: #fff;
+  font-size: 0.73rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+.openbtn4.active span:nth-of-type(1) {
+    top: 14px;
+    left: 19px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+}
+
+.openbtn4.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn4.active span:nth-of-type(3){
+    top: 26px;
+    left: 19px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+}
+
+.openbtn4.active span:nth-of-type(3)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-45deg);
+  top:7px;
+  left:5px;
+}
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+@media screen and (min-width: 1000px){
+  .login_logo {
+    position: fixed;
+    margin: 0px 0 5px 60px;
+  }
+  .openbtn4{
+    margin: 0px 50px 0 0;
+  }
+}
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .logo_header_h3 {
+    color: #fff;
+    font-size: 24px;
+  }
+}
+

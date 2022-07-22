@@ -1,0 +1,374 @@
+/* searchアイコン */
+.search.icon {
+  color: rgb(90, 90, 90);
+  /* position: absolute; */
+  margin-top: 6px;
+  margin-left: 3px;
+  width: 15px;
+  height: 15px;
+  border: solid 2px currentColor;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+} 
+.search.icon:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  height: 7px;
+  width: 2px;
+  background-color: currentColor;
+}
+.search.icon:hover {
+  color: rgb(61, 61, 61);
+}  
+
+.mypage_header_div {
+  display: flex;
+  margin: 40px 20px 0 20px;
+}
+.mypage_menu {
+  width: 30px;
+  height: 30px;
+  
+  cursor: pointer;
+}
+/* user_icon */
+.user_img {
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+}
+.mypage_search_div {
+  width: 100%;
+  /* margin-right: 30px; */
+}
+.operate_p {
+  width: 100%;
+}
+.mypage_search {
+  display: flex;
+  float: right;
+}
+.search_icon_p_div {
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+}
+.message_icon_p_div_user,.message_icon_p_div_shop {
+  cursor: pointer;
+  display: flex;
+  margin-right: 40px;
+}
+
+.user_icon_div {
+  display: flex;
+  cursor: pointer;
+}
+.user_name_p, .search_p {
+  margin: 3px 0 0 10px;
+  color: rgb(90, 90, 90);
+}
+.user_name_p:hover, .search_p:hover {
+  color: rgb(61, 61, 61);
+} 
+
+/* mypageメニューアイコン */
+.menu.icon {
+  cursor:pointer;
+  color: #000;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 13px;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+} 
+.menu.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+.menu.icon:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+/* ユーザー操作 */
+.user_operate_div {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  right: 30px;
+  background: #FFF;
+  margin-top: 40px;
+  border: 1px solid rgb(215, 215, 215);
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb(190 190 190);
+}
+.user_operate_div.active {
+  display: block;
+}
+.user_operate_p {
+  font-size: 14px;
+}
+.user_one_operate_div1 {
+  display: flex;
+  padding: 15px 0 0 10px;
+}
+.user_one_operate_div2 {
+  display: flex;
+  padding: 20px 0 0 10px;
+}
+.user_one_operate_div3 {
+  display: flex;
+  padding: 20px 0 20px 10px;
+}
+.user_one_operate_div4 {
+  display: flex;
+  padding: 20px 0 15px 10px;
+  border-top: 1px solid rgb(225, 225, 225);
+}
+.operate_text {
+  width: 75%;
+}
+.operate_i {
+  width: 25%;
+}
+
+/* icon */
+/* //ログアウト */
+.gg-log-out {
+  color:rgb(60, 60, 60);
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 6px;
+  height: 16px;
+  border: 2px solid;
+  transform: scale(var(--ggs,1));
+  border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin-left: 12px
+ }
+ .gg-log-out::after,
+ .gg-log-out::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+ }
+ .gg-log-out::after {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  bottom: 2px
+ }
+ .gg-log-out::before {
+  border-radius: 3px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  left: 5px;
+  bottom: 5px
+ } 
+ /* 設定アイコン */
+ .gg-globe-alt,
+ .gg-globe-alt::after,
+ .gg-globe-alt::before {
+  color:rgb(60, 60, 60);
+  display: block;
+  box-sizing: border-box;
+  height: 18px;
+  border: 2px solid;
+ }
+ .gg-globe-alt {
+  position: relative;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  border-radius: 22px;
+  margin-left: 10px;
+ }
+ .gg-globe-alt::after,
+ .gg-globe-alt::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  border-radius: 100%;
+  top: -2px;
+  left: 3px
+ }
+ .gg-globe-alt::after {
+  width: 24px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-bottom: 2px solid;
+  top: -11px;
+  left: -5px
+ } 
+ /* ヘルプアイコン */
+ .gg-info {
+  color:rgb(60, 60, 60);
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 40px;
+  margin-left: 10px;
+ }
+ .gg-info::after,
+ .gg-info::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 3px;
+  width: 2px;
+  background: currentColor;
+  left: 7px;
+ }
+ .gg-info::after {
+  bottom: 2px;
+  height: 8px
+ }
+ .gg-info::before {
+  height: 2px;
+  top: 2px
+ } 
+ /* よくあるご質問アイコン */
+ .gg-log-out {
+  margin-right: 13px;
+ }
+ .gg-list {
+  color:rgb(60, 60, 60);
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 20px;
+  /* border: 2px solid; */
+  border-radius: 3px;
+  margin-left: 9px;
+ }
+ .gg-list::after,
+ .gg-list::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  background: currentColor;
+  top: 3px;
+  left: 2px;
+  box-shadow:
+  0 6px 0,
+  0 12px 0
+ }
+ .gg-list::after {
+  border-radius: 3px;
+  width: 12px;
+  left: 7px
+ } 
+
+
+
+/* //message */
+.message.icon {
+  color: rgb(90, 90, 90);
+  position: absolute;
+  margin-left: 2px;
+  /* margin-right: 10px; */
+  margin-top: 7px;
+  width: 18px;
+  height: 12px;
+  border: solid 2px currentColor;
+  border-radius: 3px;
+}
+.message.icon:before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background: rgb(248, 252, 255);
+  /* background-color: #33CCFF; */
+  /* background-color: #b2cbe4; */
+  border-bottom: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+}
+
+.message_count_p_user,.message_count_p_shop {
+  position: absolute;
+  color: #fff;
+  top: 22px;
+  width: 30px;
+  text-align: center;
+  background: #5D99FF;
+  border-radius: 50%;
+  /* padding: 0 5px; */
+}
+
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .user_name_p, .search_p {
+    display: none;
+  }
+  .mypage_search {
+    position: absolute;
+    left: 20px;
+    flex-direction: row-reverse;
+  }
+  .mypage_menu {
+    position: absolute;
+    z-index: 7;
+    right: 20px;
+  }
+  .mypage_header {
+    height: 30px;
+  }
+  .user_operate_div {
+    left: 30px;
+  }
+  .search_icon_p_div {
+    margin:0;
+    margin-left: 40px;
+  }
+  .message_icon_p_div_shop {
+    margin:0;
+    margin-left:20px;
+  }
+  .message_icon_p_div_user {
+    margin:0;
+    margin-left:20px;
+  }
+  .message_count_p_shop,.message_count_p_user {
+    top: -19px;
+    left: 52px;
+  }
+}
+
+

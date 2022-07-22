@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/mypage_left.css" rel="stylesheet">
+  <link href="css/mypage_header.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  
+</head>
+<body> 
+  <!-- <div style="margin-top: 60px;"><div> -->
+
+
+
+
+
+
+
+<div id="left_shadow" class="left_shadow"></div>
+<div id="box_left" class="menu_div">
+  
+  <div class="menu_bar">
+    <div class="menu_title">
+      <a href="" class="menu_title_a">Lname</a>
+    </div>
+
+    <ul class="menu_bar_ul">
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="eye icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">マイページ</a>
+          </div>     
+        </div>
+
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">プロフィール編集</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">基本情報</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">自己紹介</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経歴・作新</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験企業</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験スキル</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望条件</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望スキル等</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">こだわり条件</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+            <div class="check icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">スカウト一覧</a>
+          </div>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="chat icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">メッセージ一覧</a>
+          </div>
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">受信トレイ</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">送信済み</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ作成</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="clock icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">応募状況</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">応募履歴一覧</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">中断された応募</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="browser icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">設定</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">パスワード設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メルマガ設定</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li menu_last_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="shutdown icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">ログアウト</a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main_div" id="main_div">
+
+  <header class="mypage_header">
+    <div id="mypage_menu" class="mypage_menu">
+      <div class="menu icon"></div>
+    </div>
+    <div class="operate_p">
+      <div class="mypage_search">
+        <div class="search_icon_p_div">
+          <div class="search icon"></div>
+          <p class="search_p">案件を探す</p>
+        </div>
+        <div class="user_icon_div" id="user_icon_div">
+          <img class="user_img" src="face_blue.png"/>
+          <p class="user_name_p">佐々木 三日月</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="user_operate_div" class="user_operate_div">
+      <div class="user_one_operate_div1">
+        <div class="operate_i"><i class="gg-globe-alt"></i></div>
+        <div class="operate_text"><p class="user_operate_p">設定</p></div>
+      </div>
+      <div class="user_one_operate_div2">
+        <div class="operate_i"><i class="gg-list"></i></div>
+        <div class="operate_text"><p class="user_operate_p">よくあるご質問</p></div>
+      </div>
+      <div class="user_one_operate_div3">
+        <div class="operate_i"><i class="gg-info"></i></div>
+        <div class="operate_text"><p class="user_operate_p">ヘルプ</p></div>
+      </div>
+      <div class="user_one_operate_div4">
+        <div class="operate_i"><i class="gg-log-out"></i></div>
+        <div class="operate_text"><p class="user_operate_p">ログアウト</p></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top_title">
+    <h3 class="title">基本情報</h3>
+  </div>
+  <!-- マイページではここの部分のみが変更される -->
+
+  
+  
+  <div class="mypage_edit_div">
+
+    <div class="mypage_edit_url_div">
+      <ul class="mypage_edit_url_ul">
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a active">基本情報</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">自己紹介</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経歴・作品</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験企業</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験スキル</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望条件</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望スキル等</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">こだわり条件</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mypage_form_div">
+      <div id="mypage_form_center" class="mypage_form_center">
+        <form method="POST" class="questionnaire_form h-adr" action="" enctype="multipart/form-data">
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">職種</p>
+            <div class="cp_ipselect cp_sl01 country_select">
+                <select class="cp_sl05" name="it_Job" required>
+                <option value="engineer" selected>エンジニア</option>
+                <option value="creator" >クリエイター</option>
+                <option value="designer" >デザイナー</option>
+                <option value="other" >その他</option>
+                </select>
+            </div>
+          </div>      
+          
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">業界経験</p>
+            <div class="input_caution_div">
+              <div class="input_caution_flex_div">
+                <p class="input_caution_p">1年未満の場合は「0」を設定してください。</p>
+              </div>
+            </div>
+            <input class="input_text text_80px_input"  type="text" name="Industry_experience" value="" required>
+            <label class="input_text_label">年前後</label>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">キャッチコピー</p>
+            <div class="input_caution_div">
+              <div class="input_caution_flex_div">
+                <p class="input_caution_p">あなたの強みを一行で伝えましょう。</p>
+              </div>
+            </div>
+            <div class="reibun_flex_div">
+              <div class="reibun_div1" id="reibun_div1">
+                例文を挿入
+              </div>
+              <div class="reibun_label_div" id="reibun_label_div">
+                <label class="input_text_label input_text_label_count"><span id="input_count_span1" class="input_count_span">0</span>/100文字</label>
+              </div>
+            </div>
+            <input id="reibun_div1_input" class="input_text max_input_text"  type="text" name="user_forte" value="aaaaaa" required>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">自己紹介文</p>
+            <div class="input_caution_div">
+              <div class="input_caution_flex_div">
+                <p class="input_caution_p">今までのご経験やこれからのキャリアのビジョンなどを簡潔に記載ください。</p>
+              </div>
+            </div>
+            <div class="reibun_flex_div">
+              <div class="reibun_div1" id="reibun_div2">
+                例文を挿入
+              </div>
+              <div class="reibun_label_div" id="reibun_label_div">
+                <label class="input_text_label input_text_label_count"><span id="input_count_span2" class="input_count_span">0</span>/2000文字</label>
+              </div>
+            </div>
+            <textarea id="reibun_div2_input" class="textarea_input" name="self_introduction_text">jkvvhv</textarea>
+          </div>
+          
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">希望の業務内容</p>
+            <div class="input_caution_div">
+              <div class="input_caution_flex_div">
+                <p class="input_caution_p">自分にあった仕事を受けるために希望の業界／業務内容を記入しましょう</p>
+              </div>
+            </div>
+            <div class="reibun_flex_div">
+              <div class="reibun_div1" id="reibun_div3">
+                例文を挿入
+              </div>
+              <div class="reibun_label_div" id="reibun_label_div">
+                <label class="input_text_label input_text_label_count"><span id="input_count_span3" class="input_count_span">0</span>/2000文字</label>
+              </div>
+            </div>
+            <textarea  id="reibun_div3_input" class="textarea_input" name="description_text">jnrkajgbakjr</textarea>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">現在の給与・単価</p>
+            <div class="input_caution_div">
+              <div class="input_caution_flex_div">
+                <p class="input_caution_p">離職中の場合は、前職在籍時の金額をご入力ください。</p>
+              </div>
+            </div>
+            <div class="select_label_flex">
+              <div class="cp_ipselect cp_sl01 country_select">
+                <select class="cp_sl05" name="allowance" required>
+                <option value="10" selected>10</option>
+                <option value="20" >20</option>
+                <option value="30" >30</option>
+                <option value="40" >40</option>
+                </select>
+              </div>
+              <label class="input_text_label input_text_label_flex">万円/月</label>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">最終学歴</p>
+            <div class="cp_ipselect cp_sl01 country_select">
+              <select class="cp_sl05" name="last_education" required>
+                <option value="none_select" selected>最終学歴</option>
+                <option value="1" >大学卒</option>
+                <option value="2" >大学院了(博士)</option>
+                <option value="3" >大学院了(修士)</option>
+                <option value="4" >短大卒</option>
+                <option value="5" >専門学校卒</option>
+                <option value="6" >高専卒</option>
+                <option value="7" >高校卒</option>
+                <option value="8" >中学校卒</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">卒業学校名</p>
+            <input id="" class="input_text max_input_text"  type="text" name="user_univ_name" value="" required>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">卒業年月</p>
+            <div class="select_flex">
+              <div class="cp_ipselect cp_sl01 select_3 ">
+                  <select class="cp_sl06" name="year" required>
+                  <option value="2000" selected>2000</option>
+                  <option value="2001" >2001</option>
+                  <option value="2002" >2002</option>
+                  </select>
+              </div>
+
+              <div class="cp_ipselect cp_sl01 select_3 ">
+                  <select class="cp_sl06" name="month" required>
+                  <option value="1" selected>1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">英語力(語学レベル)</p>
+            <div class="cp_ipselect cp_sl01 country_select">
+              <select class="cp_sl05" name="language_level" required>
+                <option value="none_select" selected>選択してください</option>
+                <option value="1" >ネイティブレベル</option>
+                <option value="2" >ビジネスレベル上級</option>
+                <option value="3" >ビジネスレベル中級</option>
+                <option value="4" >ビジネスレベル初級</option>
+                <option value="5" >簡単な会話レベル</option>
+                <option value="6" >なし</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">TOEIC</p>
+            <div class="select_label_flex">
+              <div class="cp_ipselect cp_sl01 country_select">
+                <select class="cp_sl05" name="toeic" required>
+                <option value="none_select" selected>選択してください</option>
+                <option value="10" >10</option>
+                <option value="100" >100</option>
+                <option value="200" >200</option>
+                <option value="350" >350</option>
+                </select>
+              </div>
+              <label class="input_text_label input_text_label_flex">点</label>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">その他言語1</p>
+            <div class="select_flex">
+              <div class="cp_ipselect cp_sl01 select_2 ">
+                  <select class="cp_sl06" name="language1" required>
+                  <option value="none_select" selected>選択してください</option>
+                  <option value="アラブ語" selected>アラブ語</option>
+                  <option value="ポルトガル語" >ポルトガル語</option>
+                  <option value="ポーランド語" >ポーランド語</option>
+                  </select>
+              </div>
+
+              <div class="cp_ipselect cp_sl01 select_2 ">
+                  <select class="cp_sl06" name="language_level1" required>
+                    <option value="none_select" selected>選択してください</option>
+                    <option value="1" >ネイティブレベル</option>
+                    <option value="2" >ビジネスレベル上級</option>
+                    <option value="3" >ビジネスレベル中級</option>
+                    <option value="4" >ビジネスレベル初級</option>
+                    <option value="5" >簡単な会話レベル</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">その他言語2</p>
+            <div class="select_flex">
+              <div class="cp_ipselect cp_sl01 select_2 ">
+                  <select class="cp_sl06" name="language2" required>
+                    <option value="none_select" selected>選択してください</option>
+                    <option value="アラブ語" selected>アラブ語</option>
+                    <option value="ポルトガル語" >ポルトガル語</option>
+                    <option value="ポーランド語" >ポーランド語</option>
+                  </select>
+              </div>
+
+              <div class="cp_ipselect cp_sl01 select_2 ">
+                  <select class="cp_sl06" name="language_level2" required>
+                    <option value="none_select" selected>選択してください</option>
+                    <option value="1" >ネイティブレベル</option>
+                    <option value="2" >ビジネスレベル上級</option>
+                    <option value="3" >ビジネスレベル中級</option>
+                    <option value="4" >ビジネスレベル初級</option>
+                    <option value="5" >簡単な会話レベル</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">人物タイプ（3個まで）</p>
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="1" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">コミュニケーション力自信有</label>
+              </div>
+            </div>
+            
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="2" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">要件定義/システム営業得意</label>
+              </div>
+            </div>
+            
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="3" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">論理的/コンサルタイプ</label>
+              </div>
+            </div>
+            
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="4" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">明るくムードメーカー</label>
+              </div>
+            </div>
+
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="5" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">明るくムードメーカー</label>
+              </div>
+            </div>
+
+            <div class="zinbutu_user_div">
+              <input class="zinbutu_user" name="zinbutu_user" value="6" type="checkbox" id="zinbutu_user">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div">
+                  <label id="zinbutu_user_label" class="zinbutu_user_label"></label>
+                </div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label">明るくムードメーカー</label>
+              </div>
+            </div>
+
+          </div>   
+
+
+          <div class="submit_div" >
+            <input class="input_submit" type="submit" value="変更する">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<script language="javascript" type="text/javascript"> 
+
+  //jsUH76Tgf
+  
+
+</script> 
+
+  <div class="reibun_alert_shadow_div" id="reibun_alert_shadow_div"></div>
+
+  <div class="reibun_alert_div" id="reibun_alert_div">
+
+    <div class="reibun_alert_div1" id="reibun_alert_div1">
+      <div class="reibun_judge_p_div">
+        <p class="reibun_judge_p">以下の例文を挿入しますか？</p>
+      </div>
+      <div class="reibun_main_p_div">
+        <p class="reibun_main_p">PHP上級エンジニア／ECサイト・ソーシャルアプリの開発経験が豊富</p>
+      </div>
+      <div class="reibun_button_div">
+        <div class="reibun_button_kara"></div>
+        <div id="reibun_button_cancel1" class="reibun_button_cancel">キャンセル</div>
+        <div id="reibun_button_yes1" class="reibun_button_yes1">挿入する</div>
+      </div>
+    </div>
+
+    <div class=" reibun_alert_div2" id="reibun_alert_div2">
+      <div class="reibun_judge_p_div">
+        <p class="reibun_judge_p">以下の例文を挿入しますか？</p>
+      </div>
+      <div class="reibun_main_p_div">
+        <p class="reibun_main_p">・PHP、Java、HTML5によるプロジェクト経験6件<br>
+          ・システムエンジニアとしての実務経験8年<br>
+          ・金融システム開発におけるコンサルティングが得意<br>
+          ・大手Web制作会社でWebデザイナー4年間の就業経験<br>
+          ・プログラマー、ディレクター、Webデザイナー計7名のマネジメント経験<br>
+          ・自分のキャリアを発揮したプロジェクトマネージャーになりたい<br>
+          ・大規模案件を成功に導くプロジェクトマネージャーを目指します</p>
+      </div>
+      <div class="reibun_button_div">
+        <div class="reibun_button_kara"></div>
+        <div id="reibun_button_cancel2" class="reibun_button_cancel">キャンセル</div>
+        <div id="reibun_button_yes2" class="reibun_button_yes1">挿入する</div>
+      </div>
+    </div>
+
+    <div class=" reibun_alert_div3" id="reibun_alert_div3">
+      <div class="reibun_judge_p_div">
+        <p class="reibun_judge_p">以下の例文を挿入しますか？</p>
+      </div>
+      <div class="reibun_main_p_div">
+        <p class="reibun_main_p">１．最新技術を利用しており経験を積むことができる現場<br>
+          ２．大規模トラフィックに対応するような業務（ソーシャルゲーム以外）<br>
+          ３．PHP or RubyのMVC環境による開発業務<br>
+          ４．デザイナーとして参画し、ディレクターも経験できる現場<br>
+          ５．企画立案から関われる事業／またはエンジニアのマネジメント</p>
+      </div>
+      <div class="reibun_button_div">
+        <div class="reibun_button_kara"></div>
+        <div id="reibun_button_cancel3" class="reibun_button_cancel">キャンセル</div>
+        <div id="reibun_button_yes3" class="reibun_button_yes1">挿入する</div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+
+
+</body>
+</html>
+
+<script type="text/javascript" src="js/my_page.js"></script>
+<script type="text/javascript" src="js/test.js"></script>
+

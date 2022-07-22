@@ -1,0 +1,457 @@
+.main_div {
+  margin-top: 60px;
+  background: rgb(248, 252, 255);
+}
+.top_title_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.mypage_edit_div {
+  background: #fff;
+  padding:0;
+  margin: 0;
+  border:none;
+}
+.header_main_a {
+  text-decoration:none;
+}
+.mypage_form_div {
+  background: #fff;
+}
+.questionnaire_form {
+  padding-top: 40px;
+  margin: 0;
+}
+.mypage_form_center {
+  margin: 0 auto;
+}
+.search_from_div {
+  margin: 15px 10px 20px;
+}
+.in_text_label {
+  width: 15px;
+    margin: 5px 10px 0 0;
+}
+.select_3 {
+  width: 50%;
+}
+
+
+/* /////////// */
+.multipletab{
+  width: calc( 100% - 20px );
+  margin: 10px 10px 0;
+  background:#eee;
+  overflow:hidden;
+}
+.tab-buttons{
+  display:flex;
+  width:100%;
+  border-bottom:2px solid #666;
+}
+.tab-buttons>span{
+  width: 25%;
+  text-align: center;
+  display:block;
+  float:left;
+  cursor:pointer;
+  color:#666;
+  font:400 14px 'pt sans',sans-serif;
+  background:#ddd;
+  padding:0 15px;
+  line-height:40px !important;
+}
+.tab-buttons>span.active{
+  background:#fff;
+  color:rgb(50, 50, 50);
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+.check_content_div {
+  display:none;
+}
+.check_content_div.active {
+  display:block;
+}
+/* //ページネーション */
+.pagination_div {
+  padding: 0 40px 40px;
+}
+.pagination_ul_div {
+  display:inline-block;
+  margin:0 calc( 50% - 130px );
+}
+.pagination {
+  display: flex;
+  padding: 0;
+}
+.pagination_li {
+  list-style: none;
+  text-align: center;
+  margin: 0 15px;
+  box-shadow: 0 1px 1px rgb(190 190 190);
+  background: rgb(50, 50, 50);
+  padding: 5px 10px;
+  color: #fff;
+}
+.not_disabled:hover {
+  background: #5D99FF;
+}
+.prev_next_btn {
+  color: #fff;
+  text-decoration: none;
+}
+.search_all_p {
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  margin: 20px 20px -20px;
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    list-style-position: inside;
+}
+/* //ワード検索 */
+.word_search_div {
+  display: flex;
+}
+.search_word_submit {
+  font-size: 14px;
+  height: 37px;
+  width: 54px;
+  margin-top: 5px;
+  border:none;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  background: rgb(50, 50, 50);
+  cursor:pointer;
+}
+.max_input_text {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+
+
+
+@media screen and (min-width: 1000px){
+
+}
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .top_title_img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .tab-buttons>span{
+    font:400 13px 'pt sans',sans-serif;
+  }
+  .multipletab{
+    width: calc( 100% - 10px );
+    margin: 10px 5px 0;
+  }
+  .search_from_div {
+    margin: 15px 5px 20px;
+  }
+  .pagination_li {
+    font-size: 14px;
+  }
+  .pagination_ul_div {
+    display:inline-block;
+    margin:0 calc( 50% - 120px );
+  }
+  .search_all_p {
+    font-size: 12px;
+    margin: 20px 10px -20px;
+  }
+  .search_word_submit {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .multipletab{
+    width: calc( 100% - 9px );
+    margin: 10px 5px 0;
+  }
+  .tab-buttons>span{
+    font:400 12px 'pt sans',sans-serif;
+    width: auto;
+  }
+  .tab-buttons{
+    display:inline-block;
+  }
+}
+/* ///////////////////////////////////////////////////////////////// */
+
+
+/* //応募ボタン */
+.apply_div {
+  padding: 30px 0;
+  background: rgb(238, 238, 238);
+}
+.apply_btn_div {
+  width: calc( 100% - 60% );
+  margin: 0 auto;
+}
+
+.btn,
+.apply_submit,
+a.btn,
+button.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* user-select: none; */
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #212529;
+}
+
+a.btn-flat {
+  overflow: hidden;
+  color:#fff;
+  border-radius: 0;
+  width: 90%;
+  padding: 10px 10% 10px 0;
+  background:rgb(50, 50, 50);
+}
+.apply_submit {
+  overflow: hidden;
+  display:block;
+  color:#fff;
+  border-radius: 0;
+  width: 90%;
+  padding: 10px 10% 10px 0;
+  background:rgb(50, 50, 50);
+  border:none;
+}
+
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: #5D99FF;
+}
+
+.apply_submit:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: #5D99FF;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+a.btn-flat:hover {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  transition: 1s;
+}
+.apply_submit:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.apply_submit:hover {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  transition: 1s;
+}
+
+/* ////下に配置fixed */
+.apply_div.position_low {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0,0.3);
+  z-index: 7;
+  display:block;
+}
+.position_low.active {
+  display:none;
+}
+
+/* //会社情報 */
+.company_info_div {
+  background: none;
+  margin-bottom: 0;
+}
+.company_one_div {
+  border: none;
+}
+.company_img_title_div {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.company_title_h3_div {
+  padding-top: 0;
+}
+.issue_company_name_p {
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    list-style-position: inside;
+}
+
+/* //会社詳細ページ */
+.company_info_detail_div {
+  padding:0 30px 30px;
+  background: rgb(238, 238, 238);
+}
+.company_info_detail_one_flex {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid rgb(238, 238, 238);;
+}
+.company_info_detail_one_textarea {
+  background: #fff;
+  border-bottom: 1px solid rgb(238, 238, 238);;
+}
+.company_info_detail_title_h4 {
+  width: 20%;
+  font-size: 14px;
+  padding: 15px 10px;
+  font-weight: 600;
+  color: rgb(50, 50, 50);
+}
+.company_info_detail_text {
+  font-size: 14px;
+  width: calc(100% - 20px);
+  padding: 15px 10px;
+  color: rgb(50, 50, 50);
+}
+.company_info_detail_p {
+    font-size: 14px;
+    width: 75%;
+    padding: 15px 10px;
+    color: rgb(50, 50, 50);
+    border-left: 1px solid rgb(238, 238, 238);;
+}
+
+/* ////canvas */
+.canvas_div_flex {
+  border-left: 1px solid rgb(238, 238, 238);
+  display: flex;
+  width: calc(80% - 21px);
+}
+.canvas_title_div {
+  margin: 10px;
+  padding: 10px 0 10px 10px;
+  width: calc(100% - 180px);
+  background: rgb(238, 238, 238);
+  border-radius: 5px;
+}
+.canvas_color_title_flex {
+  display: flex;
+  padding: 5px 0;
+}
+.canvas_div {
+  padding-bottom: 10px;
+}
+.canvas_title {
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+  padding: 0 10px;
+  width: calc(100% - 71px);
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    list-style-position: inside;
+}
+.camvas_color {
+  width: 21px;
+  height: 21px;
+}
+.camvas_color.color1 {
+  background: rgba(241, 107, 141, 1);
+}
+.camvas_color.color2 {
+  background: rgba(64, 224,  208, 1);
+}
+.camvas_color.color3 {
+  background: rgba(93, 153,  255, 1);
+}
+.camvas_color.color4 {
+  background: rgba( 144, 87, 255, 1);
+}
+.camvas_color.color5 {
+  background: rgba(50,  50, 50, 1);
+}
+   
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .apply_div {
+    padding: 20px 0;
+  }
+  .apply_btn_div {
+    width: calc( 100% - 50% );
+    margin: 0 auto;
+  }
+  a.btn-flat span {
+    font-size: 14px;
+  }
+  .company_info_detail_div {
+    padding:0 15px 15px;
+  }
+  .company_info_detail_title_h4,.company_info_detail_text,.company_info_detail_p,.canvas_title {
+    font-size: 12px;
+  }
+  .canvas_div_flex {
+    display:block;
+  }
+  .canvas_title_div {
+    width: calc(100% - 30px);
+  }
+  .canvas_div {
+    margin:0 auto;
+  }
+  .camvas_color {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* //応募済みボタン */
+.not_apply_btn_div {
+    width: calc( 100% - 60% );
+    margin: 0 auto;
+}
+.not_apply_span {
+  display:block;
+  width:100%;
+  text-align: center;
+  padding: 10px 0;
+  background:rgb(50, 50, 50);
+  color:rgb(150, 150, 150);
+}
+
+

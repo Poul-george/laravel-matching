@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  margin:0;
+    font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Meiryo", "MS PGothic", sans-serif;;
+}
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+.main_div {
+  height: 100%;
+}
+
+
+.message_box_div ,.user_select_div {
+  margin: 40px 40px 40px;
+  height: 100%;
+}
+.message_box_one_div,.user_select_one_div {
+  padding: 10px 20px;
+  background: rgb(50,50,50);
+  display:flex;
+}
+.message_box_one_div:hover,.user_select_one_div:hover {
+  opacity: 0.9;
+}
+.user_message_title_name,.user_select_title_name {
+  color: #fff;
+  width: calc(100% - 120px);
+}
+.user_message_name {
+  font-size: 14px;
+}
+.user_message_title {
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  list-style-position: inside;
+}
+.message_box_one_a {
+  text-decoration: none;
+}
+
+.user_message_alret_day_hm {
+  color: #fff;
+  font-size: 14px;
+  width: 50px;
+}
+.user_message_day_hm {
+  text-align: center;
+}
+.user_message_alret {
+  text-align: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #5D99FF;
+  margin: 0 auto;
+}
+.user_message_alret_span {
+  line-height: 29px;
+}
+
+.user_img_message {
+  padding-right: 20px;
+}
+.user_img_msg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* //メッセージやりとり画面 */
+.message_post_page_div {
+  margin: 0;
+}
+.message_box_div_flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.message_opponent_div_flex {
+  display: flex;
+  background: rgba(50,50,50,0.1);
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+}
+.message_opponent_name {
+  font-size: 16px;
+  line-height: 50px;
+}
+.return_icon_div {
+  height: 20px;
+  padding: 15px 15px 15px 20px;
+}
+.gg-chevron-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 20px;
+  height: 20px;
+  border-radius: 100px
+}
+.gg-chevron-left::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 14.15px;
+  height: 14.15px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 3px
+}
+
+.message_text_div {
+  height: calc(100% - 70px);
+  width: calc(100% - 40px);
+  display: block;
+  background: rgb(50,50,50);
+  overflow:scroll;
+  padding: 50px 20px 0 ;
+}
+.me_message_img_day_hm_div_flex {
+  display: flex;
+  justify-content: right;
+}
+.opponent_message_img_day_hm_div_flex {
+  display: flex;
+  justify-content: left;
+
+}
+.message_img_msg {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+}
+.message_text {
+  font-size: 14px;
+  color: #fff;
+  width: calc(70% - 40px);
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+}
+.message_ymd_span {
+  font-size: 11px;
+  margin-bottom: 5px;
+  display: block;
+}
+.my_message {
+  background: #5D99FF;
+  margin:20px 10px;
+  /* margin:20px 10px 20px calc( 30% - 40px ); */
+}
+.opponent_message {
+  background: rgb(70,70,70);
+  margin:20px 10px;
+}
+
+
+.message_post_div {
+  background: rgb(30,30,30);
+  padding: 20px 20px;
+}
+.message_post_div_flex {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.message_post_textarea {
+  border: none;
+  padding: 5px 10px;
+  height: 20px;
+  margin-right: 20px;
+  border-radius:5px;
+  resize: none;
+  width: calc(100% - 68px);
+}
+.message_post_sub {
+  border: none;
+  display: block;
+  font-size: 14px;
+  color:#fff;
+  background: #5D99FF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.show_message {
+  font-size: 12px;
+  color: #fff;
+  height: 35px;
+    margin-top: auto;
+}
+
+/* //人材剪定 */
+.user_select_one_div {
+  background: #fff;
+  color: rgb(50,50,50);
+  margin: 10px 0;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px 1px rgb(190 190 190); */
+  box-shadow: 0 0px 10px rgba(0,0,0,0.2);
+}
+.user_select_title_name {
+  color: rgb(50,50,50);
+}
+.user_select_label_div {
+  padding-right: 22.5px;
+}
+.user_select_alert_p {
+  display:none;
+}
+.user_select_alert_p.active {
+  display: block;
+  color: red;
+  background: rgb(255, 175, 175);
+  padding: 5px 0 ;
+}
+
+/* //運営者へメッセージ */
+.managers_message_btn {
+  display:block;
+  margin:0 auto;
+  background: #CC00FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 33%;
+  padding: 10px 0;
+  font-size: 14px; 
+}
+
+
+@media screen and (min-width: 1000px){
+
+}
+
+@media screen and (max-width: 799px) {
+  .message_box_div,.user_select_div {
+    margin: 40px 20px 40px;
+  }
+  .message_post_page_div {
+    margin: 0;
+  }
+  .message_box_one_div,.user_select_one_div {
+    padding: 10px 10px;
+  }
+  .user_message_alret_day_hm,.user_message_name,.message_text {
+    font-size: 12px;
+  }
+  .user_message_title,.message_ymd_span {
+    font-size: 10px;
+  }
+  .user_message_alret {
+    width: 27px;
+    height: 27px;
+  }
+  .user_message_alret_span {
+    line-height: 27px;
+  }
+  .user_message_day_hm {
+    padding-bottom: 3px;
+  }
+  .message_opponent_name {
+    font-size: 14px;
+  }
+  .return_icon_div {
+    height: 17px;
+    padding: 16.5px 10px 16.5px 10px;
+  }
+  .gg-chevron-left {
+    width: 17px;
+    height: 17px;
+  }
+  .gg-chevron-left::after {
+    width: 12px;
+    height: 12px;
+  }
+  .message_img_msg {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+  .show_message {
+    font-size: 10px;
+    height: 33px;
+  }
+  .user_select_label_div {
+    padding: 1px 8px;
+  }
+  /* //運営者へメッセージ */
+  .managers_message_btn {
+    font-size: 12px; 
+  }
+}
+
+@media screen and (max-width: 599px) { 
+  /* //運営者へメッセージ */
+  .managers_message_btn {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+

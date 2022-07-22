@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  margin:0;
+    font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Meiryo", "MS PGothic", sans-serif;
+}
+.questionnaire_input_p {
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    list-style-position: inside;
+}
+body {
+  background: #fffaff;
+}
+.main_div {
+  background: #fffaff;
+}
+.main_div.active {
+  background: #fffaff;
+}
+.how_wudth {
+  background: #EE82EE;
+}
+.input_label_flex {
+  display: flex;
+}
+.input_submit {
+  background: #CC00FF;
+  color: #fff;
+}
+.delete_label_div.active {
+  background: #CC00FF;
+}
+.select_label_set_div_55 {
+  width: 55%;
+}
+.select_label_set_div_40 {
+  width: 40%;
+  margin-right: 5%;
+}
+.select_label_set {
+  width:100%;
+}
+.caution_p_padding_bottom {
+  padding-bottom: 8px;
+}
+/* 案件登録input_title_h3 */
+.input_title_h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+}
+.input_title_h3_div {
+  background: rgb(238, 238, 238);
+  padding: 5px 0;
+  margin: 0 10px 20px;
+}
+.confirmation_input_title_h3_div {
+  margin: 0 ;
+  margin-bottom: 1px;
+}
+.confirmation_input_div {
+  margin: 40px 40px 40px;
+  background: #fff;
+}
+
+.confirmation_input_group_one_flex {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  border-bottom: none;
+  border-top: none;
+}
+.confirmation_input_group_one_flex.top {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  border-bottom: none;
+}
+.confirmation_input_group_one_flex.bottom {
+  display: flex;
+  border: 1px solid rgb(215, 215, 215);
+  border-top: none;
+}
+.confirmation_input_title_h4 {
+  width: 25%;
+  font-size:14px;
+  background: rgb(238, 238, 238);
+  padding: 15px 10px;
+  border-bottom:1px solid #fff;
+  font-weight: 600;
+  color:rgb(50, 50, 50);
+}
+.confirmation_input_p {
+  border-bottom:1px solid rgb(238, 238, 238);
+  font-size:14px;
+  width: 75%;
+  padding: 15px 10px;
+  color:rgb(50, 50, 50);
+}
+.confirmation_input_p.money_p {
+  font-size:22px;
+  color:#FF3366;
+}
+.confirmation_input_p.bottom {
+  border-bottom:none;
+}
+.confirmation_input_p.display_flex {
+  display:flex;
+  flex-wrap:wrap;
+}
+.confirmation_input_a_div {
+  color:rgb(50, 50, 50);
+  padding: 5px 15px;
+  background: rgb(238, 238, 238);
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(215, 215, 215);
+}
+.confirmation_submit_form {
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+.confirmation_btn_div {
+  display:flex;
+  margin: 0 40px;
+}
+.return_submit {
+  background:rgb(70, 70, 70);
+}
+.submit_flex {
+  width:40%;
+  margin: 0 5%;
+}
+
+/* 案件いちらん/////////////////////////////////////////////////// */
+.judge_issue_p {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+  color:rgb(50, 50, 50);
+  font-weight: 800;
+  background: #fffaff;
+}
+.judge_issue_sub_p {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color:rgb(50, 50, 50);
+  background: #fffaff;
+}
+.not_view {
+  background:rgb(100, 100, 100);
+  position:relative; z-index: 4;
+  width: 100%;
+  height: 352px;
+}
+.issues_one_div {
+  border:1px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  padding: 20px;
+}
+.issue_img_title_flex {
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+.issue_img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.issue_title_h3_div {
+  padding: 15px 0 10px 20px;
+}
+.issue_title_h3 {
+  font-size:18px;
+  font-weight: 600;
+  height: 55px;
+  color:rgb(30, 30, 30);
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: normal;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+.issue_detail_a {
+  text-decoration: none;
+}
+.issue_detail_a:hover {
+  text-decoration:underline;
+  text-decoration-color:rgb(50, 50, 50);
+}
+.issue_contents_flex {
+  display: flex;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.issue_contents_h4 {
+  font-size: 14px;
+  line-height: 30px;
+  width: 80px;
+}
+.issue_contents_right_div {
+  display: flex;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.issue_contents_right_skill {
+  position:relative;
+  display: flex;
+  margin-left: 15px;
+  font-size: 14px;
+  width: calc( 100% - 100px );
+  overflow: hidden;
+}
+.money_span {
+  color:#FF3366;
+  font-size: 20px;
+}
+.issue_contents_money {
+  color:rgb(50, 50, 50);
+  font-weight: 500;
+  font-size: 14px;
+}
+.issue_contents_right {
+  padding: 0 0 0 15px;
+}
+.confirmation_input_a_div.issue_contents {
+  margin: 0 5px;
+}
+.confirmation_input_a {
+  white-space: nowrap;
+}
+.issue_img_div {
+  width: 80px;
+  height: 80px;
+}
+/* 編集ボタンデザイン */
+.issue_edit_btn_box_div {
+  padding: 30px 0;
+  background:rgb(238, 238, 238);
+  margin-bottom: 40px;
+}
+.issue_edit_btn_a {
+  border: none;
+  text-decoration: none;
+    padding: 8px 0;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #CC00FF;
+    color: #fff;
+    width: 33%;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+/* //.rate */
+.rate{
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px 0;
+  }
+  .rate:before{
+  content: "★";
+  color: #ccc;
+  /* color: #ffb81c; */
+  font-size: 30px;
+  }
+  .rate:hover {
+    color: #CC00FF;
+  }
+
+.rate_info_div {
+  display: none;
+  position: absolute;
+  right: 30px;
+  background: #FFF;
+  margin-top: 50px;
+  border: 1px solid rgb(215, 215, 215);
+  width: 180px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb(190 190 190);
+  z-index: 10;
+}
+.rate_info_div.active {
+  display: block;
+}
+.rate_info_div_text {
+  padding: 10px;
+}
+.rate_info_p {
+  font-size: 14px;
+}
+
+/* ///user_select 人材選定 */
+
+
+
+
+@media screen and (min-width: 1000px){
+
+}
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  /* //font-size */
+  .confirmation_input_p {
+    font-size: 12px;
+  }
+  .confirmation_input_title_h4 {
+    font-size: 13px;
+  }
+
+  .width_80_input {
+    width: 80%;
+  }
+  .select_label_set_div_55 {
+    width: 65%;
+  }
+  .select_label_set_div_40 {
+    width: 30%;
+    margin-right: 5%;
+  }
+  .input_title_h3 {
+    font-size: 18px;
+  }
+  .input_title_h3_div {
+    margin: 0 5px 20px;
+  }
+  .confirmation_input_title_h3_div {
+    margin: 0 ;
+  }
+  .confirmation_input_p.money_p {
+    font-size:16px;
+  }
+  .confirmation_input_div {
+    margin: 40px 20px 40px;
+  }
+  .confirmation_btn_div {
+    margin: 0 20px;
+  }
+  /* 案件一覧 */
+  .issue_img {
+    width: 60px;
+    height: 60px;
+  }
+  .issue_title_h3 {
+    font-size:16px;
+    height: 45px;
+  }
+  .issue_contents_h4 {
+    font-size: 14px;
+    line-height: 30px;
+    width: 60px;
+  }
+  .issue_title_h3_div {
+    padding: 8px 0 10px 15px;
+  }
+  .issue_contents_right_div {
+    margin-left: 15px;
+    line-height: 30px;
+  }
+  .money_span {
+    font-size: 16px;
+  }
+  .issue_contents_right_skill {
+    margin-left: 10px;
+    width: calc( 100% - 75px );
+  }
+  .issue_img_div {
+    width: 60px;
+    height: 60px;
+  }
+  .issue_edit_btn_a {
+    width: 40%;
+      font-size: 14px;
+  }
+
+  /* //rate */
+  .rate{
+    padding: 0 10px 0;
+    }
+    .rate:before{
+    font-size: 26px;
+    }
+    .rate_info_div {
+      margin-top: 35px;
+    }
+    .rate_info_p {
+      font-size: 12px;
+    }
+}
+
+
+
+
+.test_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover; /* この一行を追加するだけ！ */
+}
+

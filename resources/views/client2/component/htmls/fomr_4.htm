@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/mypage_left.css" rel="stylesheet">
+  <link href="css/mypage_header.css" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+  <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+
+
+  <style type="text/css">
+    .scrollable {
+      position: relative;
+      /*width:400px;
+      height:400px;*/
+    }
+    .ps__rail-y .ps__thumb-y {
+      background-color: #99CCFF;
+    }
+  </style>
+
+  
+</head>
+<body> 
+  <!-- <div style="margin-top: 60px;"><div> -->
+
+
+
+
+
+
+
+<div id="left_shadow" class="left_shadow"></div>
+<div id="box_left" class="menu_div">
+  
+  <div class="menu_bar">
+    <div class="menu_title">
+      <a href="" class="menu_title_a">Lname</a>
+    </div>
+
+    <ul class="menu_bar_ul">
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="eye icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">マイページ</a>
+          </div>     
+        </div>
+
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">プロフィール編集</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">基本情報</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">自己紹介</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経歴・作新</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験企業</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験スキル</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望条件</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望スキル等</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">こだわり条件</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+            <div class="check icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">スカウト一覧</a>
+          </div>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="chat icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">メッセージ一覧</a>
+          </div>
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">受信トレイ</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">送信済み</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ作成</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="clock icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">応募状況</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">応募履歴一覧</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">中断された応募</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="browser icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">設定</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">パスワード設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メルマガ設定</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li menu_last_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="shutdown icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">ログアウト</a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main_div" id="main_div">
+
+  <header class="mypage_header">
+    <div class="mypage_header_div">
+
+      <div id="mypage_menu" class="mypage_menu">
+        <div class="menu icon"></div>
+      </div>
+      <div class="operate_p">
+        <div class="mypage_search">
+          <div class="search_icon_p_div">
+            <div class="search icon"></div>
+            <p class="search_p">案件を探す</p>
+          </div>
+          <div class="user_icon_div" id="user_icon_div">
+            <img class="user_img" src="face_blue.png"/>
+            <p class="user_name_p">佐々木 三日月</p>
+          </div>
+        </div>
+      </div>
+  
+      <div id="user_operate_div" class="user_operate_div">
+        <div class="user_one_operate_div1">
+          <div class="operate_i"><i class="gg-globe-alt"></i></div>
+          <div class="operate_text"><p class="user_operate_p">設定</p></div>
+        </div>
+        <div class="user_one_operate_div2">
+          <div class="operate_i"><i class="gg-list"></i></div>
+          <div class="operate_text"><p class="user_operate_p">よくあるご質問</p></div>
+        </div>
+        <div class="user_one_operate_div3">
+          <div class="operate_i"><i class="gg-info"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ヘルプ</p></div>
+        </div>
+        <div class="user_one_operate_div4">
+          <div class="operate_i"><i class="gg-log-out"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ログアウト</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top_title">
+    <h3 class="title">基本情報</h3>
+  </div>
+  <!-- マイページではここの部分のみが変更される -->
+
+  
+  
+  <div class="mypage_edit_div">
+
+    <div class="mypage_edit_url_div">
+      <ul class="mypage_edit_url_ul">
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a active">基本情報</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">自己紹介</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経歴・作品</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験企業</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験スキル</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望条件</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望スキル等</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">こだわり条件</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mypage_form_div">
+      <div id="mypage_form_center" class="mypage_form_center">
+        <form method="POST" class="questionnaire_form h-adr" action="" enctype="multipart/form-data">
+
+          <div class="thumbnail_div">
+
+            <div class="user_thumbnail_input_div ">
+              <div class="edit_thumbnail_cautio_div biography_works_cautio_div">
+                <p class="questionnaire_input_p">Web職務経歴書の作成</p>
+                <div class="thumbnail_caution_div">
+                  <div class="thumbnail_caution_flex_div">
+                    <div class="check_caution icon"></div>
+                    <p class="thumbnail_caution_p">入力した情報は、職務経歴書として自動生成する事ができます。自動生成した職務経歴書は「経歴・作品」からダウンロードして確認できます。</p>
+                  </div>
+                  <div class="thumbnail_caution_flex_div">
+                    <div class="check_caution icon"></div>
+                    <p class="thumbnail_caution_p">すでに「経歴・作品」に、アップロードされている職務経歴書がある場合、経験企業の入力内容から職務経歴書を作成されますと上書きされますのでご注意ください。</p>
+                  </div>
+                  <div class="thumbnail_caution_flex_div">
+                    <div class="check_caution icon"></div>
+                    <p class="thumbnail_caution_p">以下の【追加する】ボタンより、経歴を追加して下さい。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="edit_form_div">
+                <div class="add_btn_div" id="add_btn_div" name="add_btn_div">追加する</div>
+              </div>
+
+              <!-- ////////////////////////////ふえる部分 -->
+              <div class="edit_form_div experienced_companies_form_div">
+                <div class="experienced_companies_top_div">
+                  <div class="experienced_companies_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p">【1社目】</p>
+                  </div>
+                  <div class="delete_experienced_div">
+                    <!-- 1の部分は、ループで振り分け -->
+                    <!-- delete部分はidの数字変更 -->
+                    <div class="thumbnai_delete ex_companies_delete"id="ex_companies_delete1">
+                      <input class="file_delete_check" name="ex_companies_check_delete1" value="削除" type="checkbox" id="ex_companies_check1">
+                      <div id="ex_companies_dlabel_div1" class="delete_label_div"><label id="ex_companies_dlabel1" class="thumbnai_delete_label">削除</label></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experienced_companies_form_display dispalu_none_1">
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">社名</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span1">0</span>/100文字</label>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <input class="input_text ex_companies_input_text input_group1" type="text" placeholder="" name="company_name1" value="sss">
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">勤務期間</p>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <div class="select_flex">
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="year1_1" required>
+                            <option value="2000" selected>2000</option>
+                            <option value="2001" >2001</option>
+                            <option value="2002" >2002</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">年</label>
+          
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="month1_1" required>
+                                <option value="1" selected>1</option>
+                                <option value="2" >2</option>
+                                <option value="3" >3</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">月〜</label>
+                      </div>
+
+                      <div class="select_flex ex_companies_slct">
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="year1_2" required>
+                              <option value="2000" selected>2000</option>
+                              <option value="2001" >2001</option>
+                              <option value="2002" >2002</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">年</label>
+          
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="month1_2" required>
+                              <option value="1" selected>1</option>
+                              <option value="2" >2</option>
+                              <option value="3" >3</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">月</label>
+                      </div>
+
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">契約形態</p>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <div class="cp_ipselect cp_sl01 country_select ex_companies_half_slct">
+                        <!-- name -->
+                        <select class="cp_sl05" name="contract_form1" required>
+                          <option value="1" selected>業務委託</option>
+                          <option value="2" >正社員</option>
+                          <option value="3" >派遣</option>
+                          <option value="4" >契約社員</option>
+                          <option value="5" >紹介予定派遣</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">職務内容</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span1">0</span>/200文字</label>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <input class="input_text ex_companies_input_text input_group1" type="text" placeholder="" name="job_description1" value=";iyfii;yic">
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">業務内容</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span1">0</span>/1000文字</label>
+                    </div>
+
+                    <!-- class -->
+                    <div class="edit_form2_reibunn_div box_number1">
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div1">
+                        ITエンジニア
+                      </div>
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div1 margin_center">
+                        Webクリエーター
+                      </div>
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div1">
+                        イラストレーター
+                      </div>
+                    </div>
+
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text input_group1 textarea_number1" name="business_description1">ctulug</textarea>
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////////////// -->
+
+
+
+
+
+              <!-- ////////////////////////////ふえる部分 -->
+              <div class="edit_form_div experienced_companies_form_div">
+                <div class="experienced_companies_top_div">
+                  <div class="experienced_companies_num_div">
+                    <!-- for変更number -->
+                    <p class="experienced_companies_p">【2社目】</p>
+                  </div>
+                  <div class="delete_experienced_div">
+                    <!-- 1の部分は、ループで振り分け -->
+                    <!-- delete部分はidの数字変更 -->
+                    <div class="thumbnai_delete ex_companies_delete"id="ex_companies_delete2">
+                      <input class="file_delete_check" name="ex_companies_check_delete2" value="削除" type="checkbox" id="ex_companies_check2">
+                      <div id="ex_companies_dlabel_div2" class="delete_label_div"><label id="ex_companies_dlabel2" class="thumbnai_delete_label">削除</label></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experienced_companies_form_display dispalu_none_2">
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">社名</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span2">0</span>/100文字</label>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <input class="input_text ex_companies_input_text input_group2" type="text" placeholder="" name="company_name2" value="ssscluouovovoouvou">
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">勤務期間</p>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <div class="select_flex">
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="year2_1" required>
+                            <option value="2000" selected>2000</option>
+                            <option value="2001" >2001</option>
+                            <option value="2002" >2002</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">年</label>
+          
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="month2_1" required>
+                                <option value="1" selected>1</option>
+                                <option value="2" >2</option>
+                                <option value="3" >3</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">月〜</label>
+                      </div>
+
+                      <div class="select_flex ex_companies_slct">
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="year2_2" required>
+                              <option value="2000" selected>2000</option>
+                              <option value="2001" >2001</option>
+                              <option value="2002" >2002</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">年</label>
+          
+                        <div class="cp_ipselect cp_sl01 select_3 ex_companies">
+                          <!-- name -->
+                            <select class="cp_sl06" name="month2_2" required>
+                              <option value="1" selected>1</option>
+                              <option value="2" >2</option>
+                              <option value="3" >3</option>
+                            </select>
+                        </div>
+                        <label class="input_text_label input_text_label_flex ex_companies_label">月</label>
+                      </div>
+
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">契約形態</p>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <div class="cp_ipselect cp_sl01 country_select ex_companies_half_slct">
+                        <!-- name -->
+                        <select class="cp_sl05" name="contract_form2" required>
+                          <option value="1" selected>業務委託</option>
+                          <option value="2" >正社員</option>
+                          <option value="3" >派遣</option>
+                          <option value="4" >契約社員</option>
+                          <option value="5" >紹介予定派遣</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">職務内容</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span2">0</span>/200文字</label>
+                    </div>
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <input class="input_text ex_companies_input_text input_group2" type="text" placeholder="" name="job_description2" value=";iyfii;bB/lzdjryic">
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+                  
+                  <div class="edit_form2_div">
+                    <div class="edit_form2_div_flex">
+                      <p class="questionnaire_input_p">業務内容</p>
+                      <!-- class -->
+                      <label class="input_text_label "><span id="" class="input_count_span2">0</span>/1000文字</label>
+                    </div>
+
+                    <div class="edit_form2_reibunn_div box_number2">
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div2">
+                        ITエンジニア
+                      </div>
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div2 margin_center">
+                        Webクリエーター
+                      </div>
+                      <div id="" class="ex_companies_reibunn_div ex_companies_reibunn_div2">
+                        イラストレーター
+                      </div>
+                    </div>
+
+                    <div class="edit_form2_div_input">
+                      <!-- name -->
+                      <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text input_group2 textarea_number2" name="business_description2">ctuhyyclcgccuclug</textarea>
+                    </div>
+                    <div class="edit_form2_div_hr"></div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- /////////////////////////////////////////////////////// -->
+
+              
+            
+
+
+            </div>
+          </div>
+
+
+          <div class="submit_div" >
+            <input class="input_submit" type="submit" value="変更する">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript" src="js/my_page.js"></script>
+<!-- <script type="text/javascript" src="js/test.js"></script> -->
+<script src="js/perfect-scrollbar.js"></script>
+<script>
+  var ps = new PerfectScrollbar('.menu_div');
+</script>

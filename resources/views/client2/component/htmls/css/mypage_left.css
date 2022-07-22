@@ -1,0 +1,318 @@
+/* アイコン＋ */
+.purasu_icon {
+  width: 40px;
+  text-align: right;
+  font-size: 16px;
+  color: rgb(218, 218, 218);
+  cursor: pointer;
+}
+.purasu_icon:hover {
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+/* スカウトチェックアイコン */
+.check.icon {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 18px;
+  margin-top: 6px;
+  width: 6px;
+  height: 3px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* 設定アイコン */
+.browser.icon {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 1px currentColor;
+}
+
+.browser.icon:before {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 85% 15%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: solid 1px currentColor;
+}
+
+.browser.icon:after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+}
+/* mypageアイコン */
+.eye.icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 70% 15%;
+    border: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .eye.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  
+/*応募アイコン */
+.clock.icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border: solid 1px currentColor;
+    border-radius: 8px;
+  } 
+  .clock.icon:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 5px;
+    height: 1px;
+    background-color: currentColor;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  } 
+  .clock.icon:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 1px;
+    height: 6px;
+    background-color: currentColor;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+/* ログアウトアイコン */
+.shutdown.icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 3px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+  }
+  .shutdown.icon:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    width: 1px;
+    height: 8px;
+    border-left: solid 3px #5D99FF;
+    /* border-left: solid 3px #33CCFF; */
+    /* border-left: solid 3px #b2cbe4; */
+    border-right: solid 3px #5D99FF;
+    /* border-right: solid 3px #33CCFF; */
+    /* border-right: solid 3px #b2cbe4; */
+    background-color: currentColor;
+  }
+  
+  
+/* メッセージアイコン */
+.chat.icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 2px;
+    margin-top: 6px;
+    width: 15px;
+    height: 10px;
+    border: solid 1px currentColor;
+    border-radius: 2px;
+  }
+  .chat.icon:before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: #5D99FF;
+    /* background-color: #33CCFF; */
+    /* background-color: #b2cbe4; */
+    border-bottom: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  
+   
+/* プロフィールアイコン */
+.profile.icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 11px;
+    width: 14px;
+    height: 6px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-top: solid 1px currentColor;
+    border-bottom: solid 1px transparent;
+    border-radius: 6px 6px 0 0;
+}
+.profile.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: solid 1px currentColor;
+}
+.icon_div {
+    width: 30px;
+}
+
+  /* left component */
+  .menu_div {
+    /* user-select: none; */
+    overflow: scroll;
+    margin-left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #5D99FF;
+    padding-bottom: 20px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    transition:all 1.5s;
+}
+.menu_div.active {
+    overflow: scroll;
+    margin-left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #5D99FF;
+    /* background: #33CCFF; */
+    /* background: #b2cbe4; */
+    padding-bottom: 20px;
+    position: fixed;
+    transition:all 1.5s;
+}
+.menu_bar_ul {
+    margin: 0;
+    padding: 0;
+    /* height: 800px; */
+}
+.menu_li {
+    color: #fff;
+    list-style: none;
+    font-weight: 500;
+    padding: 30px 0 0;
+    width: 200px;
+    margin: 0 auto;
+}
+.menu_last_li {
+    height: 300px;
+}
+.menu_title {
+    text-align: center;
+    padding: 20px 0;
+}
+.menu_title_a {
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    color: white;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif; 
+}
+.menu_bar_content {
+    width: 120px;
+    padding-left: 10px;
+    /* display: inline-block; */
+}
+.menu_a {
+    font-size: 14px;
+    text-decoration: none;
+  color: #FFF;
+}
+.icon_flex_div {
+    display: flex;
+    cursor: pointer;
+}
+
+/* サブメニュー */
+.sub_menu_ul {
+  display: none;
+}
+.sub_menu_ul.active {
+  display: block;
+}
+.sub_menu_li {
+  list-style:none;
+  padding-top: 15px;  
+}
+.sub_menu_a {
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  /* left component */
+  .menu_div {
+    position: absolute;
+    z-index: 10;
+  }
+  .left_shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background:rgb(60, 60, 60);
+    transition-duration: 2s;
+    z-index: 5;
+  }
+  .left_shadow.active {
+    display: block;
+    position: fixed;
+    opacity: 0.6;
+    transition-duration: 2s;
+  }
+}
+
+
+/*  */
+.ps__rail-y .ps__thumb-y {
+  background-color: #99CCFF;
+}

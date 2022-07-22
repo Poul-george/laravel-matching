@@ -1,0 +1,1038 @@
+* {
+  margin: 0;
+  margin:0;
+    font-family: "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Meiryo", "MS PGothic", sans-serif;
+}
+html.none_scroll {
+  overflow: hidden;
+}
+.main_div {
+  /* user-select: none; */
+  width: 100%;
+  height: 100%;
+  /* margin-left: 0px; */
+  float:right;
+  transition:all 1.5s;
+  background: rgb(248, 252, 255);
+  /* background: rgb(235, 235, 235); */
+}
+.main_div.active {
+  /* margin-left: 250px; */
+  width: calc( 100% - 250px );
+  float:right;
+  transition:all 1.5s;
+}
+.top_title {
+  margin: 40px 30px 0;
+}
+.title {
+  font-weight: 200;
+  font-size: 24px;
+}
+
+/* edit_form */
+.questionnaire_form {
+  margin: 40px 0 20px 0;
+}
+.edit_form_div {
+  margin: 15px 10px 40px;
+}
+.submit_div {
+  margin: 0 10px;
+}
+.area_div_p {
+  display: flex;
+}
+.area_div_one {
+  width: calc( (100% - 20px) / 2 );
+  /* width: calc( 100% / 2 ); */
+}
+.area_right {
+  margin-left: 20px;
+}
+.cp_ipselect_div {
+  margin: 10px;
+}
+.midasi_h3 {
+  text-align: center;
+}
+.questionnaire_input_p {
+  margin-bottom: 0;
+  color:rgb(50, 50, 50);
+  font-size: 14px;
+}
+/* 例文 */
+.reibun_flex_div {
+  display: flex;
+  margin-top: 15px;
+}
+.reibun_label_div {
+  width: 50%;
+}
+.reibun_div1 {
+  text-align: center;
+  font-size: 14px;
+  width: 50%;
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(70, 70, 70);
+  padding: 3px 0;
+}
+.reibun_div1:hover {
+  background: rgb(60, 60, 60);
+}
+/* 例文挿入アラート */
+.reibun_alert_shadow_div {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(70, 70, 70);
+  opacity: 0.7;
+  display: none;
+}
+.reibun_alert_shadow_div.active {
+  display: block;
+}
+.reibun_alert_div {
+  border-radius: 5px;
+  position: fixed;
+  width: 60%;
+  background: #fff;
+  display: none;
+}
+.reibun_alert_div.active {
+  display: block;
+  margin: 100px 20% 0;
+}
+.reibun_alert_div1,.reibun_alert_div2,.reibun_alert_div3 {
+  display:none;
+}
+.reibun_alert_div1.active,.reibun_alert_div2.active,.reibun_alert_div3.active {
+  display:block;
+}
+.reibun_judge_p_div {
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.reibun_main_p_div {
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.reibun_judge_p,.reibun_main_p {
+  font-size: 13px;
+  padding: 10px;
+}
+/* 例文ボタン */
+.reibun_button_div {
+  display: flex;
+  padding: 10px;
+}
+.reibun_button_kara {
+  width: 30%;
+}
+.reibun_button_yes1,.reibun_button_cancel {
+  font-size: 14px;
+  width: 35%;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.reibun_button_cancel {
+  background:rgb(70, 70, 70);
+  color: #fff;
+}
+.reibun_button_yes1 {
+  background: #5D99FF;
+  margin-left: 10px;
+}
+.reibun_button_cancel:hover {
+  background:rgb(60, 60, 60);
+}
+.reibun_button_yes1:hover {
+  background: #4c89f0;
+}
+
+/* 注意書box */
+.input_caution_div {
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+  padding: 8px 0;
+  margin: 5px 0 5px;
+}
+.input_caution_p {
+  font-size: 13px;
+  padding: 0 10px;
+}
+/* セレクトラベルflex */
+.select_label_flex {
+  display: flex;
+}
+
+/* インプット・フォームデザイン */
+.submit_div {
+  width: calc( (100% - 20px) / 2 );
+  margin: 0 auto;
+}
+.input_submit {
+  width: calc(100% - 10px);
+  border: none;
+  padding: 8px 0;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #5D99FF;
+}
+.input_submit:hover {
+  opacity: 0.9;
+}
+.input_text_automatic {
+  width: calc(100% - 10px);
+  height: 37px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 2px rgb(190 190 190);
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.input_text {
+  width: calc( (100% - 45px) / 2 );
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  height: 33px;
+  padding-left:10px;
+  margin-top:5px;
+}
+.textarea_input {
+  width: calc( 100% - 22px );
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  padding:10px 10px 10px 10px;
+  margin-top:5px;
+  height: 100px;
+}
+.text_80px_input {
+  width: 80px;
+}
+.input_right {
+  float: right;
+}
+.input_text_label {
+  font-size: 14px;
+  color:rgb(50, 50, 50);
+  /* margin-top: 5px; */
+}
+.input_text_label_flex {
+  line-height: 39px;
+  margin-left: 10px;
+  width: 20%;
+  margin-top: 5px;
+}
+.input_text_label_count {
+  float: right;
+  /* margin-top: 10px; */
+  padding-top: 3px;
+}
+
+.max_input_text {
+  width: calc( 100% - 14px );
+}
+/* セレクトボックス */
+.cp_ipselect {
+	overflow: hidden;
+	width: 90px;
+	border-radius: 5px;
+  margin-top: 5px;
+}
+.cp_ipselect select {
+  font-size: 14px;
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl01 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+}
+.cp_ipselect.cp_sl01::before {
+	position: absolute;
+	top: 15px;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl01 select {
+	padding: 11.5px 0 11.5px 10px;
+	color: rgb(50, 50, 50);
+  font-weight: 300;
+}
+.select_flex {
+  display: flex;
+}
+.select_3 {
+  margin-right: 10px;
+}
+.country_select {
+  width: calc( (100% - 20px) / 2 );
+}
+.not_change {
+  background: rgb(225, 225, 225);
+}
+.select_2 {
+  margin-right: 10px;
+  width: calc( (100% - 5px) / 2 );
+}
+
+/* チェックボックス */
+.zinbutu_user_div, .checkbox_plural_div {
+  margin: 20px 0 0;
+  width: calc( (100% - 10px) / 2 );
+  display: inline-block;
+}
+.zinbutu_user_flex_div {
+  display: flex;
+}
+.zinbutu_user_label_div {
+  width: 23px;
+  height: 22px;
+  border: 1px solid rgb(200, 200, 200);
+  background: #fff;
+  border-radius: 4px;
+}
+.zinbutu_user_label_div.active {
+  background: #5D99FF;
+}
+.zinbutu_user_label {
+  width: 100%;
+  margin-top: 1px;
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}
+.checkbox_check_span{
+  width: calc( 90% - 15px );
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  list-style-position: inside;
+  margin-right: 15px;
+}
+
+
+
+/* ラジオボタン */
+.edit_form_radio_ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  display: flex;
+}
+
+.edit_form_radio_li {
+  color: #AAAAAA;
+  display: block;
+  position: relative;
+  float: left;
+  width: 100px;
+}
+.edit_form_radio_li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+.edit_form_radio_li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 4px 25px 0 40px;
+  margin: 10px auto 0;
+  height: 25px;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.edit_form_radio_li:hover label{
+  color: #787878;
+}
+
+.edit_form_radio_li .check{
+  display: block;
+  position: absolute;
+  border: 3px solid #AAAAAA;
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  top: 14px;
+  left: 10px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+.edit_form_radio_li {
+  display: inline-block;
+}
+
+.edit_form_radio_li:hover .check {
+  border: 3px solid #787878;
+}
+
+.edit_form_radio_li .check::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 8px;
+  width: 8px;
+  top: 3px;
+  left: 3px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check {
+  border: 3px solid #5D99FF;
+}
+input[type=radio]:checked ~ .check::before{
+  background: #5D99FF;
+}
+input[type=radio]:checked ~ label{
+  color: #787878;
+}
+
+/* マイページフォーム */
+.mypage_edit_div {
+  margin: 20px;
+  background: #fff;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 3px;
+  padding-bottom: 60px;
+}
+.mypage_edit_url_div {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.mypage_edit_url_ul {
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  padding: 10px 10px 0;
+  background: rgb(245, 245, 245);
+  border-bottom: 1px solid rgb(225, 225, 225);
+  
+}
+.mypage_edit_url_li {
+  list-style: none;
+  /* width: 100%; */
+}
+.mypage_edit_url_a,.mypage_edit_url_a2 {
+  display: block;
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  padding: 15px 20px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.mypage_edit_url_a:hover,.mypage_edit_url_a2:hover {
+  background: rgb(233, 233, 233);
+}
+.mypage_edit_url_a.active,.mypage_edit_url_a2.active {
+  background: #fff;
+}
+/* マイページフォーム */
+.mypage_form_div {
+
+}
+.mypage_form_center {
+  width: calc( 100% - 30%);
+  /* background: red; */
+  margin: 10px auto;
+}
+.mypage_form_center.width_active {
+  width: calc( 100% - 20px );
+  margin: 10px 10px;
+  transition:all 1.5s;
+}
+
+/* user_thumbnail */
+.thumbnail_div {
+  margin-bottom: 40px;
+}
+.user_thumbnail_div {
+  width: 100px;
+  margin: 10px auto;
+}
+.user_thumbnail_img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.thumbnail_caution_div {
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+  padding: 10px 0;
+  margin-top:10px;
+}
+.thumbnail_caution_p {
+  width: calc(100% - 13.44px);
+  font-size: 13px;
+  padding-right: 10px;
+}
+.thumbnail_caution_flex_div {
+  display: flex;
+  margin: 10px 0;
+}
+/* チェックアイコン */
+.check_caution.icon {
+  color: rgb(50, 50, 50);
+  margin: 6px 10px 0 10px;
+  width: 12px;
+  height: 5px;
+  border-bottom: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/* fileアップロードサムネイル */
+.edit_thumbnail_cautio_div {
+  margin: 0 10px 15px;
+}
+.user_thumbnail_input_label {
+  /* ボタン部分の見た目（任意） */
+  display: inline-block;
+  position: relative;
+  background: rgb(225, 225, 225);
+  color: rgb(50, 50, 50);
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 4px 0 0 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid rgb(200, 200, 200);
+}
+.user_thumbnail_input_label:hover {
+  /* ボタン部分の見た目（任意） */
+  background: rgb(200, 200, 200);
+}
+.thumbnai_up_file {
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  width: 75%;
+}
+.input_file {
+  position: absolute;
+  left:0;
+  top:0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.thumbnail_up_div {
+  display: flex;
+}
+.file_name_span {
+  font-size: 14px;
+  border: 1px solid rgb(200, 200, 200);
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  display: block;
+  line-height: 35px;
+  padding-left: 10px;
+  width: calc( 100% - 158px);
+  overflow: scroll;
+  white-space: nowrap;
+}
+.file_name_span.active {
+  background: rgb(225, 225, 225);
+}
+/* 削除ボタン */
+.thumbnai_delete {
+  margin: auto 0;
+}
+.delete_label_div {
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 4px;
+}
+.delete_label_div.active {
+  background: #5D99FF;
+}
+.thumbnai_delete_label {
+  padding-left: 30px;
+  margin-top: 2px;
+}
+/*Checkboxes styles*/
+.file_delete_check[type="checkbox"],.zinbutu_user[type="checkbox"] { display: none; }
+
+.file_delete_check[type="checkbox"] + div > label,.zinbutu_user[type="checkbox"] + div > label {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: rgb(50, 50, 50);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  white-space: nowrap;
+}
+.file_delete_check[type="checkbox"] + div > label:last-child, .zinbutu_user[type="checkbox"] + div > label:last-child { margin-bottom: 0; }
+
+.file_delete_check[type="checkbox"] + div > label:before,.zinbutu_user[type="checkbox"] + div > label:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 12px;
+  /* border: 1px solid #00ECFF; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.file_delete_check[type="checkbox"]:checked + div > label:before,.zinbutu_user[type="checkbox"]:checked + div > label:before {
+  border: 2px solid #fff;
+  width: 5px;
+  top: -1px;
+  left: 7px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.zinbutu_user[type="checkbox"]:checked + div > label:before {
+  left: -17px;
+}
+
+
+/* 経歴form file */
+.biography_works_file_up_div {
+  /* margin-top: 40px; */
+}
+.file_info_p {
+  font-size: 14px;
+  color:rgb(50, 50, 50);
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.file_info_div {
+  width: calc(100% - 140px);
+}
+.biography_works_file_info_div {
+  margin: 15px 10px 40px;
+  display: flex;
+}
+.biography_works_cautio_div {
+  margin-bottom: 40px;
+}
+.biography_works_file_download {
+  font-size: 14px;
+  width: 140px;
+  margin-left: 10px;
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid rgb(50, 50, 50);
+  background: rgb(70, 70, 70);
+  color: #fff;
+  margin-top: 30px;
+}
+.margin_none_cautio_div {
+  margin-bottom:15px;
+}
+/* experienced_companies 企業経験 */
+.experienced_companies_p {
+  font-size: 14px;
+  color:rgb(50, 50, 50);
+  padding: 10px;
+}
+.experienced_companies_top_div {
+  border-radius: 3px 3px 0 0;
+  background:rgb(230, 230, 230);
+  display: flex;
+}
+.experienced_companies_num_div {
+  width: 80%;
+}
+.delete_experienced_div {
+  width: 20%;
+}
+.experienced_companies_form_display {
+  display:block;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 0 15px;
+}
+.experienced_companies_form_display.active {
+  display:none;
+}
+.edit_form2_div {
+  margin: 40px 0;
+}
+.edit_form2_div_flex {
+  display: flex;
+}
+.edit_form2_div_flex  > .input_text_label > span{
+  margin-left: 15px;
+}
+.ex_companies_input_text {
+  width: calc(100% - 15px);
+}
+.edit_form2_div_hr {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  margin: 15px 0;
+}
+.ex_companies_label {
+  width: auto;
+  margin: 5px 20px 0 0;
+}
+.ex_companies {
+  margin-right: 2px;
+  width: 75px;
+}
+.ex_companies_slct {
+  margin-top: 10px;
+}
+.edit_form2_reibunn_div {
+  display: flex;
+  margin: 10px 0;
+}
+.ex_companies_reibunn_div {
+  font-size: 14px;
+  width: 30%;
+  color: #fff;
+  background: rgb(70, 70, 70);
+  text-align: center;
+  border-radius: 3px; 
+  padding: 3px 0;
+}
+.margin_center {
+  margin: 0 5%;
+}
+.add_btn_div {
+  font-size: 14px;
+  width: 140px;
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid rgb(50, 50, 50);
+  background: rgb(70, 70, 70);
+  color: #fff;
+  margin-top: 30px;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+  /* line-height: 34px; */
+}
+.ex_companies_textarea {
+  width: calc(100% - 24px);
+}
+.ex_companies_delete {
+  margin-top: 9px;
+}
+
+/* 経験スキル、希望スキル、こだわり等 */
+.edit_checkbox_plural_div {
+  border-bottom: 1px solid rgb(200, 200, 200);
+  border-top: none;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+}
+.edit_checkbox_num_div {
+  border-top: 1px solid rgb(200, 200, 200);
+}
+.edit_checkbox_plural_p {
+  padding: 14px 10px;
+  border-right: 1px solid rgb(200, 200, 200);
+  border-left: 1px solid rgb(200, 200, 200);
+}
+.edit_checkbox_plural_p.active {
+  background:rgb(70, 70, 70);
+  color: #fff;
+  border-right: none;
+  border-left: none;
+}
+.checkbox_group_div {
+  display: none;
+  padding: 0 15px;
+}
+.checkbox_check_label {
+  width: 10px;
+}
+.checkbox_group_div.active {
+  padding-bottom: 20px;
+  display: block;
+  background: rgb(240, 240, 240);
+}
+/* /////////////////// 希望条件  */
+.edit_form_ul {
+  list-style: none;
+  padding: 0;
+}
+.in_number {
+  font-size: 16px;
+}
+.desired_flex_li {
+  margin-top: 15px;
+}
+.desired_flex_label {
+  width: 30%;
+}
+.desired_flex_select {
+  width: 70%;
+}
+.in_text_label {
+  width: 30px;
+  margin: 5px 10px 0 0;
+}
+.desired_fulsize_select {
+  width: 100%;
+}
+.job_place_div {
+  display: block;
+}
+.alret_p.active {
+  display: none;
+}
+.alret_p.active {
+  display: block;
+  color: red;
+  background: rgb(255, 175, 175);
+  padding: 5px 0 ;
+}
+
+
+/* //必須項目らべる */
+.questionnaire_input_p_flex {
+  display: flex;
+}
+.questionnaire_input_label {
+  color: #5D99FF;
+  border: 1px solid #5D99FF;
+  padding: 2px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+@media screen and (max-width: 999px){
+  .questionnaire_input_label {
+      font-size: 13px;
+  }
+}       
+@media screen and (max-width: 799px) {
+  .questionnaire_input_label {
+      font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 1000px){
+  .questionnaire_input_p,.questionnaire_input_p,.user_thumbnail_input_label,.file_name_span,.user_thumbnail_input_label,.user_thumbnail_input_label,.input_text,.edit_form_radio_li label,.cp_ipselect select,.input_text_automatic,.input_submit,.questionnaire_input_p,.mypage_edit_url_a,.mypage_edit_url_a2,.input_text_label, .reibun_div1,.reibun_button_yes1,.reibun_button_cancel,.zinbutu_user_label,.checkbox_check_span,.file_info_p,.biography_works_file_download,.input_add_btn,.experienced_companies_p,.ex_companies_reibunn_div {
+    font-size: 16px;
+  }
+  .thumbnail_caution_p,.input_caution_p,.reibun_judge_p,.reibun_main_p {
+    font-size: 14px;
+  }
+  .in_number {
+    font-size: 18px;
+  }
+  .file_name_span {
+    width: calc( 100% - 182px);
+    line-height: 37px;
+    padding-left: 15px;
+  }
+  .mypage_form_center.width_active {
+    width: calc( 100% - 30% );
+    margin: 10px auto;
+    transition:all 1.5s;
+  }
+  .ex_companies {
+    margin-right: 2px;
+    width: 80px;
+  }
+  .in_text_label {
+    width: 35px;
+    margin: 5px 10px 0 0;
+  }
+  .width_1000_flex_div {
+    display: flex;
+  }
+  .width_1000_flex_one_div {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+
+/* スマホレイアウト */
+@media screen and (max-width: 799px) {
+  .questionnaire_input_p,.questionnaire_input_p,.user_thumbnail_input_label,.file_name_span,.user_thumbnail_input_label,.user_thumbnail_input_label,.input_text,.edit_form_radio_li label,.cp_ipselect select,.input_text_automatic,.input_submit,.questionnaire_input_p,.mypage_edit_url_a,.mypage_edit_url_a2,.input_text_label, .reibun_div1,.reibun_button_yes1,.reibun_button_cancel,.zinbutu_user_label,.checkbox_check_span,.file_info_p ,.biography_works_file_download,.input_add_btn,.experienced_companies_p,.ex_companies_reibunn_div{
+    font-size: 13px;
+  }
+  .in_number {
+    font-size: 15px;
+  }
+  .thumbnail_caution_p,.input_caution_p,.reibun_judge_p,.reibun_main_p {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  /* メインコンポーネント */
+  .main_div.active {
+      width: 100%;
+  }
+  /* マイページcomponent */
+  .mypage_div {
+      display: block;
+      margin-top: 10px;
+  }
+  .mypage_edit_div {
+    box-shadow: 0 1px 1px rgb(190 190 190);
+    /* border: none; */
+  }
+  .mypage_form_center {
+    width: calc( 100% - 20px );
+  }
+  .thumbnail_caution_flex_div {
+    padding-right: 5px;
+  }
+  .thumbnail_div,.edit_form_div {
+    margin: 15px 5px 40px;
+  }
+  .edit_thumbnail_cautio_div {
+    margin: 0 5px 15px;
+  }
+  .thumbnai_up_file {
+    margin: 0 0 0 5px;
+  }
+  /* インプット */
+  .input_text,.input_text_automatic {
+    width: calc(100% - 20px);
+    display: block;
+  }
+  .area_div_p {
+    display: block;
+  }
+  .area_right {
+    margin-left: 0;
+  }
+  .input_right {
+    float: none;
+    margin-top: 15px;
+  }
+  .country_select {
+    width: calc(100% - 6px);
+  }
+  .area_div_one {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .text_80px_input {
+    width: 80px;
+    display: inline-block;
+  }
+  .max_input_text {
+    width: calc( 100% - 14px );
+  }
+  .reibun_alert_div {
+    border-radius: 5px;
+    position: fixed;
+    width: 90%;
+    background: #fff;
+    display: none;
+  }
+  .reibun_alert_div.active {
+    display: block;
+    margin: 200px 5% 0;
+  }
+  .zinbutu_user_div, .checkbox_plural_div {
+    margin: 10px auto 0;
+    width: 100%;
+    display: block;
+  }
+  .biography_works_file_download {
+    width: 100px;
+  }
+  .file_info_div {
+    width: calc(100% - 100px);
+  }
+  .add_btn_div {
+    width: 100px;
+  }
+  .ex_companies_input_text {
+    width: calc(100% - 15px);
+  }
+  .ex_companies_half_slct {
+    width: calc(100% - 2px);
+  }
+  .ex_companies_textarea {
+    width: calc(100% - 24px);
+  }
+  .edit_form2_reibunn_div {
+    display: block;
+  }
+  .ex_companies_reibunn_div {
+    width: 50%;
+  }
+  .margin_center {
+    margin: 10px 0;
+  }
+  .delete_experienced_div {
+    width: 30%;
+  }
+  .experienced_companies_num_div {
+    width: 70%;
+  }
+  .checkbox_group_div.active {
+    padding-top: 10px;
+  }
+  .zinbutu_user_label_div {
+    width: 22px;
+    height: 20px;
+  }
+  .checkbox_check_span {
+    line-height: 22px;
+  }
+  .margin_side_5px_div {
+    margin: 0 5px;
+  }
+  .ex_companies_label {
+    margin-right: 12px;
+  }
+}

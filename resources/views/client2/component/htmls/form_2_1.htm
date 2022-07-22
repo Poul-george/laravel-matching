@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/form_CLIENT1.css" rel="stylesheet">
+  <link href="css/mypage_left.css" rel="stylesheet">
+  <link href="css/mypage_left2.css" rel="stylesheet">
+  <link href="css/mypage_header.css" rel="stylesheet">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <!-- <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script> -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</head>
+<body> 
+
+
+
+
+<div id="left_shadow" class="left_shadow"></div>
+<div id="box_left" class="menu_div">
+  
+  <div class="menu_bar">
+    <div class="menu_title">
+      <a href="" class="menu_title_a">Lname</a>
+    </div>
+
+    <ul class="menu_bar_ul">
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="eye icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">マイページ</a>
+          </div>     
+        </div>
+
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">プロフィール編集</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">基本情報</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">自己紹介</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経歴・作新</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験企業</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">経験スキル</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望条件</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">希望スキル等</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">こだわり条件</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="profile icon"></div>
+            <div class="check icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">スカウト一覧</a>
+          </div>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="chat icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">メッセージ一覧</a>
+          </div>
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">受信トレイ</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">送信済み</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ作成</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="clock icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">応募状況</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">応募履歴一覧</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">中断された応募</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li">
+        <div class="icon_flex_div sub_menu_have">
+          <div class="icon_div">
+            <div class="browser icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">設定</a>
+          </div>
+  
+          <div class="purasu_icon">＋</div>
+        </div>
+
+        <div class="sub_menu_div">
+          <ul class="sub_menu_ul">
+            <li class="sub_menu_li"><a class="sub_menu_a">メッセージ設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">パスワード設定</a></li>
+            <li class="sub_menu_li"><a class="sub_menu_a">メルマガ設定</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menu_li menu_last_li">
+        <div class="icon_flex_div">
+          <div class="icon_div">
+            <div class="shutdown icon"></div>
+          </div>
+          <div class="menu_bar_content">
+            <a class="menu_a">ログアウト</a>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="main_div" id="main_div">
+
+  <header class="mypage_header">
+    <div class="mypage_header_div">
+
+      <div id="mypage_menu" class="mypage_menu">
+        <div class="menu icon"></div>
+      </div>
+      <div class="operate_p">
+        <div class="mypage_search">
+          <div class="search_icon_p_div">
+            <div class="search icon"></div>
+            <p class="search_p">案件を探す</p>
+          </div>
+          <div class="user_icon_div" id="user_icon_div">
+            <img class="user_img" src="face_blue.png"/>
+            <p class="user_name_p">佐々木 三日月</p>
+          </div>
+        </div>
+      </div>
+  
+      <div id="user_operate_div" class="user_operate_div">
+        <div class="user_one_operate_div1">
+          <div class="operate_i"><i class="gg-globe-alt"></i></div>
+          <div class="operate_text"><p class="user_operate_p">設定</p></div>
+        </div>
+        <div class="user_one_operate_div2">
+          <div class="operate_i"><i class="gg-list"></i></div>
+          <div class="operate_text"><p class="user_operate_p">よくあるご質問</p></div>
+        </div>
+        <div class="user_one_operate_div3">
+          <div class="operate_i"><i class="gg-info"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ヘルプ</p></div>
+        </div>
+        <div class="user_one_operate_div4">
+          <div class="operate_i"><i class="gg-log-out"></i></div>
+          <div class="operate_text"><p class="user_operate_p">ログアウト</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="top_title">
+    <h3 class="title">基本情報</h3>
+  </div>
+  <!-- マイページではここの部分のみが変更される -->
+
+  
+  
+  <div class="mypage_edit_div">
+
+    <div class="mypage_edit_url_div">
+      <ul class="mypage_edit_url_ul">
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a active">基本情報</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">自己紹介</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経歴・作品</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験企業</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">経験スキル</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望条件</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">希望スキル等</a>
+        </li>
+        <li class="mypage_edit_url_li">
+          <a href="" class="mypage_edit_url_a">こだわり条件</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mypage_form_div">
+      <div id="mypage_form_center" class="mypage_form_center">
+        <form method="POST" class="questionnaire_form h-adr" action="" enctype="multipart/form-data" onsubmit="return cancelsubmit2()">
+
+          <!-- //////////////// -->
+          <div class="edit_form_div">
+            <div class="edit_form2_div_flex">
+              <p class="questionnaire_input_p">会社紹介</p>
+              <!-- class -->
+              <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+            </div>
+            <div class="edit_form2_div_input">
+              <!-- name -->
+              <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="company_introduction">hhhhhhh</textarea>
+            </div>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <!-- ///////////////////////////////////////////////////////////////////////////// -->
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p alret_p alret_p_num_1"></p>
+            <p class="questionnaire_input_p">関係業界</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p caution_p_padding_bottom">・関係業界とその割合を選択してください</p>
+                <p class="input_caution_p caution_p_padding_bottom">・割合の総合計が100％以内に収まるように選択してください</p>
+                <p class="input_caution_p">・関係業界の5個目以降は、その他として自動的にカウントします。</p>
+              </div>
+            </div>
+            <ul class="edit_form_ul">
+              
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total1_1" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu1_1" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option  value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total1_2" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu1_2" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option  value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total1_3" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu1_3" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option  value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total1_4" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu1_4" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option  value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+             
+              
+            </ul>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////// -->
+
+        
+          <!-- ///////////////////////////////////////////////////////////////////////////// -->
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p alret_p alret_p_num_2"></p>
+            <p class="questionnaire_input_p">関係業界</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p caution_p_padding_bottom">・関係業界とその割合を選択してください</p>
+                <p class="input_caution_p caution_p_padding_bottom">・割合の総合計が100％以内に収まるように選択してください</p>
+                <p class="input_caution_p">・関係業界の5個目以降は、その他として自動的にカウントします。</p>
+              </div>
+            </div>
+            <ul class="edit_form_ul">
+              
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total2_1" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu2_1" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option  value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total2_2" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu2_2" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option  value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total2_3" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu2_3" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option  value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total2_4" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu2_4" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option  value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+             
+              
+            </ul>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////// -->
+
+          <!-- ///////////////////////////////////////////////////////////////////////////// -->
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p alret_p alret_p_num_3"></p>
+            <p class="questionnaire_input_p">関係業界</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p caution_p_padding_bottom">・関係業界とその割合を選択してください</p>
+                <p class="input_caution_p caution_p_padding_bottom">・割合の総合計が100％以内に収まるように選択してください</p>
+                <p class="input_caution_p">・関係業界の5個目以降は、その他として自動的にカウントします。</p>
+              </div>
+            </div>
+            <ul class="edit_form_ul">
+              
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total3_1" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu3_1" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option  value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total3_2" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu3_2" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option  value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total3_3" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu3_3" name="priority1"required >
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option  value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+              <li class="select_label_flex edit_form_flex_li desired_flex_li">
+
+                <div class="select_label_set_div_40">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">割合</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="total3_4" name="priority1" required>
+                      <option value="" selected>選択してください</option>
+                      <option value="5" >5</option>
+                      <option value="10" >10</option>
+                      <option value="15" >15</option>
+                      <option value="20" >20</option>
+                      <option value="25" >25</option>
+                      <option value="30" >30</option>
+                      <option value="35" >35</option>
+                      <option value="40" >40</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="select_label_set_div_55">
+                  <label class="input_text_label input_text_label_flex desired_flex_label">業界</label>
+                  <div class="cp_ipselect cp_sl01 country_select select_label_set">
+                    <select class="hanbetu3_4" name="priority1" required>
+                    <option value="" selected>選択してください</option>
+                    <option value="1" >a</option>
+                    <option  value="2" >b</option>
+                    <option value="3" >c</option>
+                    <option value="4" >d</option>
+                    <option value="5" >e</option>
+                    <option value="6" >f</option>
+                    <option value="7" >g</option>
+                    <option value="8" >h</option>
+                    </select>
+                  </div>
+                </div>
+
+              </li>
+
+             
+              
+            </ul>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+          <div class="edit_form_div">
+            <div class="edit_form2_div_flex">
+              <p class="questionnaire_input_p">PRコメント</p>
+              <!-- class -->
+              <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+            </div>
+
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p">自社のPRコメントをご記入ください</p>
+              </div>
+            </div>
+
+            <div class="edit_form2_div_input">
+              <!-- name -->
+              <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="pr_comment">vhk</textarea>
+            </div>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">会社種類</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p">例) 独立系、インターネット系</p>
+              </div>
+            </div>
+            <input class="input_text ex_companies_input_text input_group1" type="text" placeholder="" name="company_type" value="sss">
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">面接・商談方法</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p">可能な面接・商談方法を選択してください。</p>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user interview_check" name="interview_check[]" value="1" type="checkbox" id="interview_check">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">訪問可能</span>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user interview_check" name="interview_check[]" value="2" type="checkbox" id="interview_check">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">場所指定</span>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user interview_check" name="interview_check[]" value="3" type="checkbox" id="interview_check">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">Skype</span>
+              </div>
+            </div>
+
+            <div class="checkbox_plural_div sukil_check_restriction_none">
+              <input class="zinbutu_user interview_check" name="interview_check[]" value="4" type="checkbox" id="interview_check">
+              <div class="zinbutu_user_flex_div">
+                <div id="zinbutu_user_label_div" class="zinbutu_user_label_div"></div>
+                <label id="zinbutu_user_label" class="zinbutu_user_label checkbox_check_label"></label>
+                <span class="checkbox_check_span">電話</span>
+              </div>
+            </div>
+            
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">メンバー</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p">所属メンバーについて　例) 所属が10名程度</p>
+              </div>
+            </div>
+            <input class="input_text ex_companies_input_text input_group1" type="text" placeholder="" name="member_text" value="sss">
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <div class="edit_form2_div_flex">
+              <p class="questionnaire_input_p">保有案件の特徴</p>
+              <!-- class -->
+              <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+            </div>
+
+            <div class="edit_form2_div_input">
+              <!-- name -->
+              <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="characteristics_of_holding">ckkxyxkxkyxkyx</textarea>
+            </div>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <div class="edit_form2_div_flex">
+              <p class="questionnaire_input_p">取引先の傾向</p>
+              <!-- class -->
+              <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+            </div>
+            <div class="edit_form2_div_input">
+              <!-- name -->
+              <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="business_partner_trends">ckkxyxkxkyxkyx</textarea>
+            </div>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <p class="questionnaire_input_p">支払サイト</p>
+            <div class="input_caution_div ">
+              <div class="input_caution_flex_div ">
+                <p class="input_caution_p">例) 30日サイトが多い</p>
+              </div>
+            </div>
+            <input class="input_text ex_companies_input_text input_group1" type="text" placeholder="" name="payment_site_info" value="sss">
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          <div class="edit_form_div">
+            <div class="edit_form2_div_flex">
+              <p class="questionnaire_input_p">所属人材の傾向</p>
+              <!-- class -->
+              <label class="input_text_label "><span id="" class="input_count_span">0</span>/1000文字</label>
+            </div>
+            <div class="edit_form2_div_input">
+              <!-- name -->
+              <textarea id="" class="textarea_input ex_companies_textarea ex_companies_input_text  tokuhitu_textarea" name="trends_in_human_resources">ckkxyxkxkyxkyx</textarea>
+            </div>
+            <div class="edit_form2_div_hr"></div>
+          </div>
+
+          
+
+          <div class="submit_div" >
+
+            <input class="input_submit" type="submit" value="変更する">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- <script type="text/javascript" src="js/my_page.js"></script> -->
+<script type="text/javascript" src="js/company_page.js"></script>
