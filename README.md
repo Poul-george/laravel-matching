@@ -5,6 +5,8 @@
 フロントエンド blade jQuery
 その他 stripe
 
+以下URLは全てテスト環境
+
 管理者画面　view(laravel-matching/resources/view/administrator)
 http://longopmatch.xsrv.jp/administrator
 
