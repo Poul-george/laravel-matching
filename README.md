@@ -11,7 +11,7 @@
 http://longopmatch.xsrv.jp/administrator
 
 機能一覧
-・ログイン\n
+・ログイン<br>
 ・新規登録
 ・管理者追加/管理者削除
 ・お知らせ機能
